@@ -10,17 +10,6 @@
         
         {% include footer.html %}
         
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
-        <script src="/js/bootstrap.min.js"></script>
-        <script src="/js/main.js"></script>
-        <script src="/js/jquery.blueimp-gallery.min.js"></script>
-        <script src="/js/bootstrap-image-gallery.min.js"></script>
-        <script type="text/javascript">
-        	$(document).ready(function() {
-        		{{ page.onDocumentReady }}
-        	});
-        </script>
         <script>
             // Google Analytics - http://www.google.com/analytics/
             var gaProperty = 'UA-54117328-2';
@@ -44,6 +33,17 @@
             ga('create', 'UA-54117328-2', 'auto');
             ga('set', 'anonymizeIp', true);
             ga('send', 'pageview');
+        </script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+        <script src="/js/main.js"></script>
+        <script src="/js/jquery.blueimp-gallery.min.js"></script>
+        <script src="/js/bootstrap-image-gallery.min.js"></script>
+        <script type="text/javascript">
+        	$(document).ready(function() {
+        		{{ page.onDocumentReady }}
+        	});
         </script>
     </body>
 
