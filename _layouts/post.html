@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<header class="page-header">
+    <h1>{{ page.title }} <small>{{ page.subtitle }}</small></h1>
+    <div class="meta">
+        <small>{{ page.date | date: "%F" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</small>
+    </div>
+</header>
+
+<article>
+{{ content }}
+</article>

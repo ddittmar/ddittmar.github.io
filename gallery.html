@@ -1,0 +1,33 @@
+---
+layout: plain
+title: Gallery
+permalink: /gallery/
+onDocumentReady: onLoadGallery();
+---
+
+<header class="paralax-page-header background-header-gallery bg-attachment-fixed">
+  <h1>Gallery</h1>
+  <div>flickr pictures</div>
+</header>
+
+<div class="bg-light" style="padding-top: 25px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2" role="complementary">
+                <ul id="albums" class="nav nav-pills nav-stacked" style="margin-bottom: 20px;">
+                    <li class="active"><a id="loadLatestUploadsGallery" href="#">latest uploads</a></li>
+                    <li><a id="loadInterestingnessGallery" href="#">by interestness</a></li>
+                </ul>
+            </div>
+            <div class="col-md-10" role="main">
+                <div id="gallery"></div>
+                <ul class="pager" id="pager" data-page="1">
+                    <li class="previous disabled"><a id="prevGalleryPage" href="#">&larr; Newer</a></li>
+                    <li class="next"><a id="nextGalleryPage" href="#">Older &rarr;</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include gallery.html %}

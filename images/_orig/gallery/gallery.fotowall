@@ -1,0 +1,1292 @@
+<?xml version="1.0" ?>
+<fotowall version="0.9" format="2">
+  <canvas>
+    <meta>
+      <filepath>/home/dirk/workspace/blog_and_gallery/images/_orig/gallery/gallery.fotowall</filepath>
+    </meta>
+    <mode>
+      <id>0</id>
+    </mode>
+    <background>
+      <mode>3</mode>
+      <back-properties ratio="2"/>
+      <title></title>
+      <background-color>
+        <top>
+          <red>192</red>
+          <green>192</green>
+          <blue>192</blue>
+        </top>
+        <bottom>
+          <red>80</red>
+          <green>80</green>
+          <blue>80</blue>
+        </bottom>
+      </background-color>
+      <title-color>
+        <red>255</red>
+        <green>0</green>
+        <blue>0</blue>
+      </title-color>
+      <foreground-color>
+        <red>128</red>
+        <green>128</green>
+        <blue>128</blue>
+      </foreground-color>
+    </background>
+    <content>
+      <picture>
+        <rect>
+          <x>-100</x>
+          <y>-100</y>
+          <w>200</w>
+          <h>200</h>
+        </rect>
+        <pos>
+          <x>482.333</x>
+          <y>586.333</y>
+        </pos>
+        <zvalue>1</zvalue>
+        <visible>1</visible>
+        <frame-class>4096</frame-class>
+        <frame-text-enabled>1</frame-text-enabled>
+        <frame-text>3958565556...</frame-text>
+        <transformation yRot="0" xRot="0" zRot="14"/>
+        <mirror state="0"/>
+        <relativeFilePath>3958565556_694409c261_m.jpg</relativeFilePath>
+        <fileUrl>/home/dirk/workspace/blog_and_gallery/images/_orig/gallery/3958565556_694409c261_m.jpg</fileUrl>
+        <effects>
+          <effect param="1" type="8"/>
+          <effect param="1" type="8"/>
+        </effects>
+      </picture>
+      <picture>
+        <rect>
+          <x>-100</x>
+          <y>-66</y>
+          <w>200</w>
+          <h>133</h>
+        </rect>
+        <pos>
+          <x>1104.33</x>
+          <y>444.333</y>
+        </pos>
+        <zvalue>2</zvalue>
+        <visible>1</visible>
+        <frame-class>4096</frame-class>
+        <frame-text-enabled>1</frame-text-enabled>
+        <frame-text>3979209747...</frame-text>
+        <transformation yRot="0" xRot="0" zRot="-10"/>
+        <mirror state="0"/>
+        <relativeFilePath>3979209747_96bfd46f9d_m.jpg</relativeFilePath>
+        <fileUrl>/home/dirk/workspace/blog_and_gallery/images/_orig/gallery/3979209747_96bfd46f9d_m.jpg</fileUrl>
+        <effects>
+          <effect param="1" type="8"/>
+          <effect param="1" type="8"/>
+        </effects>
+      </picture>
+      <picture>
+        <rect>
+          <x>-100</x>
+          <y>-100</y>
+          <w>200</w>
+          <h>200</h>
+        </rect>
+        <pos>
+          <x>736.333</x>
+          <y>359.333</y>
+        </pos>
+        <zvalue>3</zvalue>
+        <visible>1</visible>
+        <frame-class>4096</frame-class>
+        <frame-text-enabled>1</frame-text-enabled>
+        <frame-text>3991423508...</frame-text>
+        <transformation yRot="0" xRot="0" zRot="-18"/>
+        <mirror state="0"/>
+        <relativeFilePath>3991423508_64ffd8dd55_m.jpg</relativeFilePath>
+        <fileUrl>/home/dirk/workspace/blog_and_gallery/images/_orig/gallery/3991423508_64ffd8dd55_m.jpg</fileUrl>
+        <effects>
+          <effect param="1" type="8"/>
+          <effect param="1" type="8"/>
+        </effects>
+      </picture>
+      <picture>
+        <rect>
+          <x>-100</x>
+          <y>-75</y>
+          <w>200</w>
+          <h>150</h>
+        </rect>
+        <pos>
+          <x>1342.33</x>
+          <y>782.333</y>
+        </pos>
+        <zvalue>4</zvalue>
+        <visible>1</visible>
+        <frame-class>4096</frame-class>
+        <frame-text-enabled>1</frame-text-enabled>
+        <frame-text>4034674289...</frame-text>
+        <transformation yRot="0" xRot="0" zRot="-28"/>
+        <mirror state="0"/>
+        <relativeFilePath>4034674289_316b55771c_m.jpg</relativeFilePath>
+        <fileUrl>/home/dirk/workspace/blog_and_gallery/images/_orig/gallery/4034674289_316b55771c_m.jpg</fileUrl>
+        <effects>
+          <effect param="1" type="8"/>
+          <effect param="1" type="8"/>
+        </effects>
+      </picture>
+      <picture>
+        <rect>
+          <x>-100</x>
+          <y>-66</y>
+          <w>200</w>
+          <h>132</h>
+        </rect>
+        <pos>
+          <x>319.333</x>
+          <y>426.333</y>
+        </pos>
+        <zvalue>5</zvalue>
+        <visible>1</visible>
+        <frame-class>4096</frame-class>
+        <frame-text-enabled>1</frame-text-enabled>
+        <frame-text>4121202763...</frame-text>
+        <transformation yRot="0" xRot="0" zRot="28"/>
+        <mirror state="0"/>
+        <relativeFilePath>4121202763_2202e28509_m.jpg</relativeFilePath>
+        <fileUrl>/home/dirk/workspace/blog_and_gallery/images/_orig/gallery/4121202763_2202e28509_m.jpg</fileUrl>
+        <effects>
+          <effect param="1" type="8"/>
+          <effect param="1" type="8"/>
+        </effects>
+      </picture>
+      <picture>
+        <rect>
+          <x>-100</x>
+          <y>-100</y>
+          <w>200</w>
+          <h>200</h>
+        </rect>
+        <pos>
+          <x>971.333</x>
+          <y>638.333</y>
+        </pos>
+        <zvalue>6</zvalue>
+        <visible>1</visible>
+        <frame-class>4096</frame-class>
+        <frame-text-enabled>1</frame-text-enabled>
+        <frame-text>4174274543...</frame-text>
+        <transformation yRot="0" xRot="0" zRot="-1"/>
+        <mirror state="0"/>
+        <relativeFilePath>4174274543_459750a75d_m.jpg</relativeFilePath>
+        <fileUrl>/home/dirk/workspace/blog_and_gallery/images/_orig/gallery/4174274543_459750a75d_m.jpg</fileUrl>
+        <effects>
+          <effect param="1" type="8"/>
+          <effect param="1" type="8"/>
+        </effects>
+      </picture>
+      <picture>
+        <rect>
+          <x>-100</x>
+          <y>-66</y>
+          <w>200</w>
+          <h>133</h>
+        </rect>
+        <pos>
+          <x>401.333</x>
+          <y>204.333</y>
+        </pos>
+        <zvalue>7</zvalue>
+        <visible>1</visible>
+        <frame-class>4096</frame-class>
+        <frame-text-enabled>1</frame-text-enabled>
+        <frame-text>4203023322...</frame-text>
+        <transformation yRot="0" xRot="0" zRot="29"/>
+        <mirror state="0"/>
+        <relativeFilePath>4203023322_ebe665a8dd_m.jpg</relativeFilePath>
+        <fileUrl>/home/dirk/workspace/blog_and_gallery/images/_orig/gallery/4203023322_ebe665a8dd_m.jpg</fileUrl>
+        <effects>
+          <effect param="1" type="8"/>
+          <effect param="1" type="8"/>
+        </effects>
+      </picture>
+      <picture>
+        <rect>
+          <x>-100</x>
+          <y>-66</y>
+          <w>200</w>
+          <h>133</h>
+        </rect>
+        <pos>
+          <x>243.333</x>
+          <y>671.333</y>
+        </pos>
+        <zvalue>8</zvalue>
+        <visible>1</visible>
+        <frame-class>4096</frame-class>
+        <frame-text-enabled>1</frame-text-enabled>
+        <frame-text>4248998858...</frame-text>
+        <transformation yRot="0" xRot="0" zRot="1"/>
+        <mirror state="0"/>
+        <relativeFilePath>4248998858_4bd88ef762_m.jpg</relativeFilePath>
+        <fileUrl>/home/dirk/workspace/blog_and_gallery/images/_orig/gallery/4248998858_4bd88ef762_m.jpg</fileUrl>
+        <effects>
+          <effect param="1" type="8"/>
+          <effect param="1" type="8"/>
+        </effects>
+      </picture>
+      <picture>
+        <rect>
+          <x>-100</x>
+          <y>-59</y>
+          <w>200</w>
+          <h>118</h>
+        </rect>
+        <pos>
+          <x>249.333</x>
+          <y>200.333</y>
+        </pos>
+        <zvalue>9</zvalue>
+        <visible>1</visible>
+        <frame-class>4096</frame-class>
+        <frame-text-enabled>1</frame-text-enabled>
+        <frame-text>4296750473...</frame-text>
+        <transformation yRot="0" xRot="0" zRot="-22"/>
+        <mirror state="0"/>
+        <relativeFilePath>4296750473_f8cbaa1a5a_m.jpg</relativeFilePath>
+        <fileUrl>/home/dirk/workspace/blog_and_gallery/images/_orig/gallery/4296750473_f8cbaa1a5a_m.jpg</fileUrl>
+        <effects>
+          <effect param="1" type="8"/>
+          <effect param="1" type="8"/>
+        </effects>
+      </picture>
+      <picture>
+        <rect>
+          <x>-100</x>
+          <y>-66</y>
+          <w>200</w>
+          <h>133</h>
+        </rect>
+        <pos>
+          <x>994.333</x>
+          <y>641.333</y>
+        </pos>
+        <zvalue>10</zvalue>
+        <visible>1</visible>
+        <frame-class>4096</frame-class>
+        <frame-text-enabled>1</frame-text-enabled>
+        <frame-text>4337654234...</frame-text>
+        <transformation yRot="0" xRot="0" zRot="-9"/>
+        <mirror state="0"/>
+        <relativeFilePath>4337654234_854e09ca2e_m.jpg</relativeFilePath>
+        <fileUrl>/home/dirk/workspace/blog_and_gallery/images/_orig/gallery/4337654234_854e09ca2e_m.jpg</fileUrl>
+        <effects>
+          <effect param="1" type="8"/>
+          <effect param="1" type="8"/>
+        </effects>
+      </picture>
+      <picture>
+        <rect>
+          <x>-100</x>
+          <y>-150</y>
+          <w>200</w>
+          <h>300</h>
+        </rect>
+        <pos>
+          <x>946.333</x>
+          <y>655.333</y>
+        </pos>
+        <zvalue>11</zvalue>
+        <visible>1</visible>
+        <frame-class>4096</frame-class>
+        <frame-text-enabled>1</frame-text-enabled>
+        <frame-text>4341073023...</frame-text>
+        <transformation yRot="0" xRot="0" zRot="-8"/>
+        <mirror state="0"/>
+        <relativeFilePath>4341073023_4519949702_m.jpg</relativeFilePath>
+        <fileUrl>/home/dirk/workspace/blog_and_gallery/images/_orig/gallery/4341073023_4519949702_m.jpg</fileUrl>
+        <effects>
+          <effect param="1" type="8"/>
+          <effect param="1" type="8"/>
+        </effects>
+      </picture>
+      <picture>
+        <rect>
+          <x>-100</x>
+          <y>-66</y>
+          <w>200</w>
+          <h>133</h>
+        </rect>
+        <pos>
+          <x>252.333</x>
+          <y>93.3333</y>
+        </pos>
+        <zvalue>12</zvalue>
+        <visible>1</visible>
+        <frame-class>4096</frame-class>
+        <frame-text-enabled>1</frame-text-enabled>
+        <frame-text>4343668739...</frame-text>
+        <transformation yRot="0" xRot="0" zRot="19"/>
+        <mirror state="0"/>
+        <relativeFilePath>4343668739_214e81ecc7_m.jpg</relativeFilePath>
+        <fileUrl>/home/dirk/workspace/blog_and_gallery/images/_orig/gallery/4343668739_214e81ecc7_m.jpg</fileUrl>
+        <effects>
+          <effect param="1" type="8"/>
+          <effect param="1" type="8"/>
+        </effects>
+      </picture>
+      <picture>
+        <rect>
+          <x>-100</x>
+          <y>-150</y>
+          <w>200</w>
+          <h>300</h>
+        </rect>
+        <pos>
+          <x>783.333</x>
+          <y>591.333</y>
+        </pos>
+        <zvalue>13</zvalue>
+        <visible>1</visible>
+        <frame-class>4096</frame-class>
+        <frame-text-enabled>1</frame-text-enabled>
+        <frame-text>4382161389...</frame-text>
+        <transformation yRot="0" xRot="0" zRot="-19"/>
+        <mirror state="0"/>
+        <relativeFilePath>4382161389_1cd2ee8b15_m.jpg</relativeFilePath>
+        <fileUrl>/home/dirk/workspace/blog_and_gallery/images/_orig/gallery/4382161389_1cd2ee8b15_m.jpg</fileUrl>
+        <effects>
+          <effect param="1" type="8"/>
+          <effect param="1" type="8"/>
+        </effects>
+      </picture>
+      <picture>
+        <rect>
+          <x>-100</x>
+          <y>-150</y>
+          <w>200</w>
+          <h>300</h>
+        </rect>
+        <pos>
+          <x>612.333</x>
+          <y>514.333</y>
+        </pos>
+        <zvalue>14</zvalue>
+        <visible>1</visible>
+        <frame-class>4096</frame-class>
+        <frame-text-enabled>1</frame-text-enabled>
+        <frame-text>4386288671...</frame-text>
+        <transformation yRot="0" xRot="0" zRot="-20"/>
+        <mirror state="0"/>
+        <relativeFilePath>4386288671_b052fff51e_m.jpg</relativeFilePath>
+        <fileUrl>/home/dirk/workspace/blog_and_gallery/images/_orig/gallery/4386288671_b052fff51e_m.jpg</fileUrl>
+        <effects>
+          <effect param="1" type="8"/>
+          <effect param="1" type="8"/>
+        </effects>
+      </picture>
+      <picture>
+        <rect>
+          <x>-100</x>
+          <y>-150</y>
+          <w>200</w>
+          <h>300</h>
+        </rect>
+        <pos>
+          <x>399.333</x>
+          <y>422.333</y>
+        </pos>
+        <zvalue>15</zvalue>
+        <visible>1</visible>
+        <frame-class>4096</frame-class>
+        <frame-text-enabled>1</frame-text-enabled>
+        <frame-text>4455309100...</frame-text>
+        <transformation yRot="0" xRot="0" zRot="24"/>
+        <mirror state="0"/>
+        <relativeFilePath>4455309100_72695a4187_m.jpg</relativeFilePath>
+        <fileUrl>/home/dirk/workspace/blog_and_gallery/images/_orig/gallery/4455309100_72695a4187_m.jpg</fileUrl>
+        <effects>
+          <effect param="1" type="8"/>
+          <effect param="1" type="8"/>
+        </effects>
+      </picture>
+      <picture>
+        <rect>
+          <x>-100</x>
+          <y>-66</y>
+          <w>200</w>
+          <h>133</h>
+        </rect>
+        <pos>
+          <x>971.333</x>
+          <y>471.333</y>
+        </pos>
+        <zvalue>16</zvalue>
+        <visible>1</visible>
+        <frame-class>4096</frame-class>
+        <frame-text-enabled>1</frame-text-enabled>
+        <frame-text>4505709473...</frame-text>
+        <transformation yRot="0" xRot="0" zRot="-15"/>
+        <mirror state="0"/>
+        <relativeFilePath>4505709473_69a4dcd63f_m.jpg</relativeFilePath>
+        <fileUrl>/home/dirk/workspace/blog_and_gallery/images/_orig/gallery/4505709473_69a4dcd63f_m.jpg</fileUrl>
+        <effects>
+          <effect param="1" type="8"/>
+          <effect param="1" type="8"/>
+        </effects>
+      </picture>
+      <picture>
+        <rect>
+          <x>-100</x>
+          <y>-66</y>
+          <w>200</w>
+          <h>133</h>
+        </rect>
+        <pos>
+          <x>1325.33</x>
+          <y>637.333</y>
+        </pos>
+        <zvalue>17</zvalue>
+        <visible>1</visible>
+        <frame-class>4096</frame-class>
+        <frame-text-enabled>1</frame-text-enabled>
+        <frame-text>4510580226...</frame-text>
+        <transformation yRot="0" xRot="0" zRot="-20"/>
+        <mirror state="0"/>
+        <relativeFilePath>4510580226_035e9bd62f_m.jpg</relativeFilePath>
+        <fileUrl>/home/dirk/workspace/blog_and_gallery/images/_orig/gallery/4510580226_035e9bd62f_m.jpg</fileUrl>
+        <effects>
+          <effect param="1" type="8"/>
+          <effect param="1" type="8"/>
+        </effects>
+      </picture>
+      <picture>
+        <rect>
+          <x>-100</x>
+          <y>-173</y>
+          <w>200</w>
+          <h>347</h>
+        </rect>
+        <pos>
+          <x>858.333</x>
+          <y>529.333</y>
+        </pos>
+        <zvalue>18</zvalue>
+        <visible>1</visible>
+        <frame-class>4096</frame-class>
+        <frame-text-enabled>1</frame-text-enabled>
+        <frame-text>4566628088...</frame-text>
+        <transformation yRot="0" xRot="0" zRot="-10"/>
+        <mirror state="0"/>
+        <relativeFilePath>4566628088_a7aa0d2823_m.jpg</relativeFilePath>
+        <fileUrl>/home/dirk/workspace/blog_and_gallery/images/_orig/gallery/4566628088_a7aa0d2823_m.jpg</fileUrl>
+        <effects>
+          <effect param="1" type="8"/>
+          <effect param="1" type="8"/>
+        </effects>
+      </picture>
+      <picture>
+        <rect>
+          <x>-100</x>
+          <y>-154</y>
+          <w>200</w>
+          <h>309</h>
+        </rect>
+        <pos>
+          <x>1132.33</x>
+          <y>776.333</y>
+        </pos>
+        <zvalue>19</zvalue>
+        <visible>1</visible>
+        <frame-class>4096</frame-class>
+        <frame-text-enabled>1</frame-text-enabled>
+        <frame-text>4578473915...</frame-text>
+        <transformation yRot="0" xRot="0" zRot="-22"/>
+        <mirror state="0"/>
+        <relativeFilePath>4578473915_4ea0f8e8ac_m.jpg</relativeFilePath>
+        <fileUrl>/home/dirk/workspace/blog_and_gallery/images/_orig/gallery/4578473915_4ea0f8e8ac_m.jpg</fileUrl>
+        <effects>
+          <effect param="1" type="8"/>
+          <effect param="1" type="8"/>
+        </effects>
+      </picture>
+      <picture>
+        <rect>
+          <x>-100</x>
+          <y>-150</y>
+          <w>200</w>
+          <h>300</h>
+        </rect>
+        <pos>
+          <x>553.333</x>
+          <y>765.333</y>
+        </pos>
+        <zvalue>20</zvalue>
+        <visible>1</visible>
+        <frame-class>4096</frame-class>
+        <frame-text-enabled>1</frame-text-enabled>
+        <frame-text>4615996839...</frame-text>
+        <transformation yRot="0" xRot="0" zRot="-14"/>
+        <mirror state="0"/>
+        <relativeFilePath>4615996839_a186afee7e_m.jpg</relativeFilePath>
+        <fileUrl>/home/dirk/workspace/blog_and_gallery/images/_orig/gallery/4615996839_a186afee7e_m.jpg</fileUrl>
+        <effects>
+          <effect param="1" type="8"/>
+          <effect param="1" type="8"/>
+        </effects>
+      </picture>
+      <picture>
+        <rect>
+          <x>-100</x>
+          <y>-150</y>
+          <w>200</w>
+          <h>300</h>
+        </rect>
+        <pos>
+          <x>1333.33</x>
+          <y>412.333</y>
+        </pos>
+        <zvalue>21</zvalue>
+        <visible>1</visible>
+        <frame-class>4096</frame-class>
+        <frame-text-enabled>1</frame-text-enabled>
+        <frame-text>4735259212...</frame-text>
+        <transformation yRot="0" xRot="0" zRot="-5"/>
+        <mirror state="0"/>
+        <relativeFilePath>4735259212_c3e1b8d6d5_m.jpg</relativeFilePath>
+        <fileUrl>/home/dirk/workspace/blog_and_gallery/images/_orig/gallery/4735259212_c3e1b8d6d5_m.jpg</fileUrl>
+        <effects>
+          <effect param="1" type="8"/>
+          <effect param="1" type="8"/>
+        </effects>
+      </picture>
+      <picture>
+        <rect>
+          <x>-100</x>
+          <y>-150</y>
+          <w>200</w>
+          <h>300</h>
+        </rect>
+        <pos>
+          <x>56.3333</x>
+          <y>585.333</y>
+        </pos>
+        <zvalue>22</zvalue>
+        <visible>1</visible>
+        <frame-class>4096</frame-class>
+        <frame-text-enabled>1</frame-text-enabled>
+        <frame-text>4746011561...</frame-text>
+        <transformation yRot="0" xRot="0" zRot="-20"/>
+        <mirror state="0"/>
+        <relativeFilePath>4746011561_6e95b51e15_m.jpg</relativeFilePath>
+        <fileUrl>/home/dirk/workspace/blog_and_gallery/images/_orig/gallery/4746011561_6e95b51e15_m.jpg</fileUrl>
+        <effects>
+          <effect param="1" type="8"/>
+          <effect param="1" type="8"/>
+        </effects>
+      </picture>
+      <picture>
+        <rect>
+          <x>-100</x>
+          <y>-66</y>
+          <w>200</w>
+          <h>133</h>
+        </rect>
+        <pos>
+          <x>227.333</x>
+          <y>542.333</y>
+        </pos>
+        <zvalue>23</zvalue>
+        <visible>1</visible>
+        <frame-class>4096</frame-class>
+        <frame-text-enabled>1</frame-text-enabled>
+        <frame-text>4760430772...</frame-text>
+        <transformation yRot="0" xRot="0" zRot="-17"/>
+        <mirror state="0"/>
+        <relativeFilePath>4760430772_73e606e54b_m.jpg</relativeFilePath>
+        <fileUrl>/home/dirk/workspace/blog_and_gallery/images/_orig/gallery/4760430772_73e606e54b_m.jpg</fileUrl>
+        <effects>
+          <effect param="1" type="8"/>
+          <effect param="1" type="8"/>
+        </effects>
+      </picture>
+      <picture>
+        <rect>
+          <x>-100</x>
+          <y>-150</y>
+          <w>200</w>
+          <h>300</h>
+        </rect>
+        <pos>
+          <x>1014.33</x>
+          <y>169.333</y>
+        </pos>
+        <zvalue>24</zvalue>
+        <visible>1</visible>
+        <frame-class>4096</frame-class>
+        <frame-text-enabled>1</frame-text-enabled>
+        <frame-text>4952152880...</frame-text>
+        <transformation yRot="0" xRot="0" zRot="6"/>
+        <mirror state="0"/>
+        <relativeFilePath>4952152880_9b01ed7aa3_m.jpg</relativeFilePath>
+        <fileUrl>/home/dirk/workspace/blog_and_gallery/images/_orig/gallery/4952152880_9b01ed7aa3_m.jpg</fileUrl>
+        <effects>
+          <effect param="1" type="8"/>
+          <effect param="1" type="8"/>
+        </effects>
+      </picture>
+      <picture>
+        <rect>
+          <x>-100</x>
+          <y>-62</y>
+          <w>200</w>
+          <h>125</h>
+        </rect>
+        <pos>
+          <x>1122.33</x>
+          <y>325.333</y>
+        </pos>
+        <zvalue>25</zvalue>
+        <visible>1</visible>
+        <frame-class>4096</frame-class>
+        <frame-text-enabled>1</frame-text-enabled>
+        <frame-text>5023035862...</frame-text>
+        <transformation yRot="0" xRot="0" zRot="16"/>
+        <mirror state="0"/>
+        <relativeFilePath>5023035862_0477a67eba_m.jpg</relativeFilePath>
+        <fileUrl>/home/dirk/workspace/blog_and_gallery/images/_orig/gallery/5023035862_0477a67eba_m.jpg</fileUrl>
+        <effects>
+          <effect param="1" type="8"/>
+          <effect param="1" type="8"/>
+        </effects>
+      </picture>
+      <picture>
+        <rect>
+          <x>-100</x>
+          <y>-150</y>
+          <w>200</w>
+          <h>300</h>
+        </rect>
+        <pos>
+          <x>964.333</x>
+          <y>683.333</y>
+        </pos>
+        <zvalue>26</zvalue>
+        <visible>1</visible>
+        <frame-class>4096</frame-class>
+        <frame-text-enabled>1</frame-text-enabled>
+        <frame-text>5063884341...</frame-text>
+        <transformation yRot="0" xRot="0" zRot="-27"/>
+        <mirror state="0"/>
+        <relativeFilePath>5063884341_10ed0bfb40_m.jpg</relativeFilePath>
+        <fileUrl>/home/dirk/workspace/blog_and_gallery/images/_orig/gallery/5063884341_10ed0bfb40_m.jpg</fileUrl>
+        <effects>
+          <effect param="1" type="8"/>
+          <effect param="1" type="8"/>
+        </effects>
+      </picture>
+      <picture>
+        <rect>
+          <x>-100</x>
+          <y>-150</y>
+          <w>200</w>
+          <h>300</h>
+        </rect>
+        <pos>
+          <x>1233.33</x>
+          <y>492.333</y>
+        </pos>
+        <zvalue>27</zvalue>
+        <visible>1</visible>
+        <frame-class>4096</frame-class>
+        <frame-text-enabled>1</frame-text-enabled>
+        <frame-text>5068863400...</frame-text>
+        <transformation yRot="0" xRot="0" zRot="28"/>
+        <mirror state="0"/>
+        <relativeFilePath>5068863400_298fa3d53d_m.jpg</relativeFilePath>
+        <fileUrl>/home/dirk/workspace/blog_and_gallery/images/_orig/gallery/5068863400_298fa3d53d_m.jpg</fileUrl>
+        <effects>
+          <effect param="1" type="8"/>
+          <effect param="1" type="8"/>
+        </effects>
+      </picture>
+      <picture>
+        <rect>
+          <x>-100</x>
+          <y>-66</y>
+          <w>200</w>
+          <h>133</h>
+        </rect>
+        <pos>
+          <x>999.333</x>
+          <y>616.333</y>
+        </pos>
+        <zvalue>28</zvalue>
+        <visible>1</visible>
+        <frame-class>4096</frame-class>
+        <frame-text-enabled>1</frame-text-enabled>
+        <frame-text>5139998845...</frame-text>
+        <transformation yRot="0" xRot="0" zRot="14"/>
+        <mirror state="0"/>
+        <relativeFilePath>5139998845_0a52bfdf14_m.jpg</relativeFilePath>
+        <fileUrl>/home/dirk/workspace/blog_and_gallery/images/_orig/gallery/5139998845_0a52bfdf14_m.jpg</fileUrl>
+        <effects>
+          <effect param="1" type="8"/>
+          <effect param="1" type="8"/>
+        </effects>
+      </picture>
+      <picture>
+        <rect>
+          <x>-100</x>
+          <y>-66</y>
+          <w>200</w>
+          <h>133</h>
+        </rect>
+        <pos>
+          <x>401.333</x>
+          <y>699.333</y>
+        </pos>
+        <zvalue>29</zvalue>
+        <visible>1</visible>
+        <frame-class>4096</frame-class>
+        <frame-text-enabled>1</frame-text-enabled>
+        <frame-text>5179486094...</frame-text>
+        <transformation yRot="0" xRot="0" zRot="-14"/>
+        <mirror state="0"/>
+        <relativeFilePath>5179486094_45f67389b2_m.jpg</relativeFilePath>
+        <fileUrl>/home/dirk/workspace/blog_and_gallery/images/_orig/gallery/5179486094_45f67389b2_m.jpg</fileUrl>
+        <effects>
+          <effect param="1" type="8"/>
+          <effect param="1" type="8"/>
+        </effects>
+      </picture>
+      <picture>
+        <rect>
+          <x>-100</x>
+          <y>-150</y>
+          <w>200</w>
+          <h>300</h>
+        </rect>
+        <pos>
+          <x>537.333</x>
+          <y>284.333</y>
+        </pos>
+        <zvalue>30</zvalue>
+        <visible>1</visible>
+        <frame-class>4096</frame-class>
+        <frame-text-enabled>1</frame-text-enabled>
+        <frame-text>5321461904...</frame-text>
+        <transformation yRot="0" xRot="0" zRot="-30"/>
+        <mirror state="0"/>
+        <relativeFilePath>5321461904_ef284684f4_m.jpg</relativeFilePath>
+        <fileUrl>/home/dirk/workspace/blog_and_gallery/images/_orig/gallery/5321461904_ef284684f4_m.jpg</fileUrl>
+        <effects>
+          <effect param="1" type="8"/>
+          <effect param="1" type="8"/>
+        </effects>
+      </picture>
+      <picture>
+        <rect>
+          <x>-100</x>
+          <y>-66</y>
+          <w>200</w>
+          <h>133</h>
+        </rect>
+        <pos>
+          <x>759.333</x>
+          <y>274.333</y>
+        </pos>
+        <zvalue>31</zvalue>
+        <visible>1</visible>
+        <frame-class>4096</frame-class>
+        <frame-text-enabled>1</frame-text-enabled>
+        <frame-text>5408585614...</frame-text>
+        <transformation yRot="0" xRot="0" zRot="-15"/>
+        <mirror state="0"/>
+        <relativeFilePath>5408585614_42cfeb783a_m.jpg</relativeFilePath>
+        <fileUrl>/home/dirk/workspace/blog_and_gallery/images/_orig/gallery/5408585614_42cfeb783a_m.jpg</fileUrl>
+        <effects>
+          <effect param="1" type="8"/>
+          <effect param="1" type="8"/>
+        </effects>
+      </picture>
+      <picture>
+        <rect>
+          <x>-100</x>
+          <y>-176</y>
+          <w>200</w>
+          <h>352</h>
+        </rect>
+        <pos>
+          <x>856.333</x>
+          <y>163.333</y>
+        </pos>
+        <zvalue>32</zvalue>
+        <visible>1</visible>
+        <frame-class>4096</frame-class>
+        <frame-text-enabled>1</frame-text-enabled>
+        <frame-text>5413488047...</frame-text>
+        <transformation yRot="0" xRot="0" zRot="-16"/>
+        <mirror state="0"/>
+        <relativeFilePath>5413488047_b304b8d5ea_m.jpg</relativeFilePath>
+        <fileUrl>/home/dirk/workspace/blog_and_gallery/images/_orig/gallery/5413488047_b304b8d5ea_m.jpg</fileUrl>
+        <effects>
+          <effect param="1" type="8"/>
+          <effect param="1" type="8"/>
+        </effects>
+      </picture>
+      <picture>
+        <rect>
+          <x>-110</x>
+          <y>-165</y>
+          <w>220</w>
+          <h>330</h>
+        </rect>
+        <pos>
+          <x>87.3333</x>
+          <y>146.333</y>
+        </pos>
+        <zvalue>33</zvalue>
+        <visible>1</visible>
+        <frame-class>4096</frame-class>
+        <frame-text-enabled>1</frame-text-enabled>
+        <frame-text>5422588802...</frame-text>
+        <transformation yRot="0" xRot="0" zRot="-1,369273224389598"/>
+        <mirror state="0"/>
+        <relativeFilePath>5422588802_f2f010881d_m.jpg</relativeFilePath>
+        <fileUrl>/home/dirk/workspace/blog_and_gallery/images/_orig/gallery/5422588802_f2f010881d_m.jpg</fileUrl>
+        <effects>
+          <effect param="1" type="8"/>
+          <effect param="1" type="8"/>
+        </effects>
+      </picture>
+      <picture>
+        <rect>
+          <x>-100</x>
+          <y>-66</y>
+          <w>200</w>
+          <h>133</h>
+        </rect>
+        <pos>
+          <x>839.333</x>
+          <y>772.333</y>
+        </pos>
+        <zvalue>34</zvalue>
+        <visible>1</visible>
+        <frame-class>4096</frame-class>
+        <frame-text-enabled>1</frame-text-enabled>
+        <frame-text>5559691866...</frame-text>
+        <transformation yRot="0" xRot="0" zRot="-6"/>
+        <mirror state="0"/>
+        <relativeFilePath>5559691866_b6ff5da7bc_m.jpg</relativeFilePath>
+        <fileUrl>/home/dirk/workspace/blog_and_gallery/images/_orig/gallery/5559691866_b6ff5da7bc_m.jpg</fileUrl>
+        <effects>
+          <effect param="1" type="8"/>
+          <effect param="1" type="8"/>
+        </effects>
+      </picture>
+      <picture>
+        <rect>
+          <x>-100</x>
+          <y>-66</y>
+          <w>200</w>
+          <h>133</h>
+        </rect>
+        <pos>
+          <x>384.333</x>
+          <y>79.3333</y>
+        </pos>
+        <zvalue>35</zvalue>
+        <visible>1</visible>
+        <frame-class>4096</frame-class>
+        <frame-text-enabled>1</frame-text-enabled>
+        <frame-text>5619394669...</frame-text>
+        <transformation yRot="0" xRot="0" zRot="25"/>
+        <mirror state="0"/>
+        <relativeFilePath>5619394669_e3da59166f_m.jpg</relativeFilePath>
+        <fileUrl>/home/dirk/workspace/blog_and_gallery/images/_orig/gallery/5619394669_e3da59166f_m.jpg</fileUrl>
+        <effects>
+          <effect param="1" type="8"/>
+          <effect param="1" type="8"/>
+        </effects>
+      </picture>
+      <picture>
+        <rect>
+          <x>-100</x>
+          <y>-66</y>
+          <w>200</w>
+          <h>133</h>
+        </rect>
+        <pos>
+          <x>289.333</x>
+          <y>312.333</y>
+        </pos>
+        <zvalue>36</zvalue>
+        <visible>1</visible>
+        <frame-class>4096</frame-class>
+        <frame-text-enabled>1</frame-text-enabled>
+        <frame-text>5654878272...</frame-text>
+        <transformation yRot="0" xRot="0" zRot="-29"/>
+        <mirror state="0"/>
+        <relativeFilePath>5654878272_071d679813_m.jpg</relativeFilePath>
+        <fileUrl>/home/dirk/workspace/blog_and_gallery/images/_orig/gallery/5654878272_071d679813_m.jpg</fileUrl>
+        <effects>
+          <effect param="1" type="8"/>
+          <effect param="1" type="8"/>
+        </effects>
+      </picture>
+      <picture>
+        <rect>
+          <x>-126</x>
+          <y>-84</y>
+          <w>252</w>
+          <h>168</h>
+        </rect>
+        <pos>
+          <x>396.333</x>
+          <y>824.333</y>
+        </pos>
+        <zvalue>37</zvalue>
+        <visible>1</visible>
+        <frame-class>4096</frame-class>
+        <frame-text-enabled>1</frame-text-enabled>
+        <frame-text>5684192445...</frame-text>
+        <transformation yRot="0" xRot="0" zRot="22,5347971486388"/>
+        <mirror state="0"/>
+        <relativeFilePath>5684192445_4387a168b7_m.jpg</relativeFilePath>
+        <fileUrl>/home/dirk/workspace/blog_and_gallery/images/_orig/gallery/5684192445_4387a168b7_m.jpg</fileUrl>
+        <effects>
+          <effect param="1" type="8"/>
+          <effect param="1" type="8"/>
+        </effects>
+      </picture>
+      <picture>
+        <rect>
+          <x>-100</x>
+          <y>-66</y>
+          <w>200</w>
+          <h>133</h>
+        </rect>
+        <pos>
+          <x>719.333</x>
+          <y>721.333</y>
+        </pos>
+        <zvalue>38</zvalue>
+        <visible>1</visible>
+        <frame-class>4096</frame-class>
+        <frame-text-enabled>1</frame-text-enabled>
+        <frame-text>5777958394...</frame-text>
+        <transformation yRot="0" xRot="0" zRot="12"/>
+        <mirror state="0"/>
+        <relativeFilePath>5777958394_a29024f407_m.jpg</relativeFilePath>
+        <fileUrl>/home/dirk/workspace/blog_and_gallery/images/_orig/gallery/5777958394_a29024f407_m.jpg</fileUrl>
+        <effects>
+          <effect param="1" type="8"/>
+          <effect param="1" type="8"/>
+        </effects>
+      </picture>
+      <picture>
+        <rect>
+          <x>-100</x>
+          <y>-66</y>
+          <w>200</w>
+          <h>133</h>
+        </rect>
+        <pos>
+          <x>976.333</x>
+          <y>368.333</y>
+        </pos>
+        <zvalue>39</zvalue>
+        <visible>1</visible>
+        <frame-class>4096</frame-class>
+        <frame-text-enabled>1</frame-text-enabled>
+        <frame-text>6323081425...</frame-text>
+        <transformation yRot="0" xRot="0" zRot="19"/>
+        <mirror state="0"/>
+        <relativeFilePath>6323081425_950f50282d_m.jpg</relativeFilePath>
+        <fileUrl>/home/dirk/workspace/blog_and_gallery/images/_orig/gallery/6323081425_950f50282d_m.jpg</fileUrl>
+        <effects>
+          <effect param="1" type="8"/>
+          <effect param="1" type="8"/>
+        </effects>
+      </picture>
+      <picture>
+        <rect>
+          <x>-100</x>
+          <y>-66</y>
+          <w>200</w>
+          <h>133</h>
+        </rect>
+        <pos>
+          <x>498.333</x>
+          <y>99.3333</y>
+        </pos>
+        <zvalue>40</zvalue>
+        <visible>1</visible>
+        <frame-class>4096</frame-class>
+        <frame-text-enabled>1</frame-text-enabled>
+        <frame-text>6378732129...</frame-text>
+        <transformation yRot="0" xRot="0" zRot="-6"/>
+        <mirror state="0"/>
+        <relativeFilePath>6378732129_bc32df51dd_m.jpg</relativeFilePath>
+        <fileUrl>/home/dirk/workspace/blog_and_gallery/images/_orig/gallery/6378732129_bc32df51dd_m.jpg</fileUrl>
+        <effects>
+          <effect param="1" type="8"/>
+          <effect param="1" type="8"/>
+        </effects>
+      </picture>
+      <picture>
+        <rect>
+          <x>-159</x>
+          <y>-106</y>
+          <w>319</w>
+          <h>212</h>
+        </rect>
+        <pos>
+          <x>150.333</x>
+          <y>793.333</y>
+        </pos>
+        <zvalue>41</zvalue>
+        <visible>1</visible>
+        <frame-class>4096</frame-class>
+        <frame-text-enabled>1</frame-text-enabled>
+        <frame-text>7488713578...</frame-text>
+        <transformation yRot="0" xRot="0" zRot="6,991782909755138"/>
+        <mirror state="0"/>
+        <relativeFilePath>7488713578_d208d1584c_m.jpg</relativeFilePath>
+        <fileUrl>/home/dirk/workspace/blog_and_gallery/images/_orig/gallery/7488713578_d208d1584c_m.jpg</fileUrl>
+        <effects>
+          <effect param="1" type="8"/>
+          <effect param="1" type="8"/>
+        </effects>
+      </picture>
+      <picture>
+        <rect>
+          <x>-100</x>
+          <y>-150</y>
+          <w>200</w>
+          <h>300</h>
+        </rect>
+        <pos>
+          <x>1263.33</x>
+          <y>189.333</y>
+        </pos>
+        <zvalue>42</zvalue>
+        <visible>1</visible>
+        <frame-class>4096</frame-class>
+        <frame-text-enabled>1</frame-text-enabled>
+        <frame-text>8116888126...</frame-text>
+        <transformation yRot="0" xRot="0" zRot="21"/>
+        <mirror state="0"/>
+        <relativeFilePath>8116888126_9ea4ed2057_m.jpg</relativeFilePath>
+        <fileUrl>/home/dirk/workspace/blog_and_gallery/images/_orig/gallery/8116888126_9ea4ed2057_m.jpg</fileUrl>
+        <effects>
+          <effect param="1" type="8"/>
+          <effect param="1" type="8"/>
+        </effects>
+      </picture>
+      <picture>
+        <rect>
+          <x>-100</x>
+          <y>-150</y>
+          <w>200</w>
+          <h>300</h>
+        </rect>
+        <pos>
+          <x>111.333</x>
+          <y>414.333</y>
+        </pos>
+        <zvalue>43</zvalue>
+        <visible>1</visible>
+        <frame-class>4096</frame-class>
+        <frame-text-enabled>1</frame-text-enabled>
+        <frame-text>8343508422...</frame-text>
+        <transformation yRot="0" xRot="0" zRot="-30"/>
+        <mirror state="0"/>
+        <relativeFilePath>8343508422_c8340edfea_m.jpg</relativeFilePath>
+        <fileUrl>/home/dirk/workspace/blog_and_gallery/images/_orig/gallery/8343508422_c8340edfea_m.jpg</fileUrl>
+        <effects>
+          <effect param="1" type="8"/>
+          <effect param="1" type="8"/>
+        </effects>
+      </picture>
+      <picture>
+        <rect>
+          <x>-100</x>
+          <y>-54</y>
+          <w>200</w>
+          <h>108</h>
+        </rect>
+        <pos>
+          <x>732.333</x>
+          <y>813.333</y>
+        </pos>
+        <zvalue>44</zvalue>
+        <visible>1</visible>
+        <frame-class>4096</frame-class>
+        <frame-text-enabled>1</frame-text-enabled>
+        <frame-text>8371807546...</frame-text>
+        <transformation yRot="0" xRot="0" zRot="-27"/>
+        <mirror state="0"/>
+        <relativeFilePath>8371807546_c1c6b1582c_m.jpg</relativeFilePath>
+        <fileUrl>/home/dirk/workspace/blog_and_gallery/images/_orig/gallery/8371807546_c1c6b1582c_m.jpg</fileUrl>
+        <effects>
+          <effect param="1" type="8"/>
+          <effect param="1" type="8"/>
+        </effects>
+      </picture>
+      <picture>
+        <rect>
+          <x>-100</x>
+          <y>-56</y>
+          <w>200</w>
+          <h>112</h>
+        </rect>
+        <pos>
+          <x>1047.33</x>
+          <y>215.333</y>
+        </pos>
+        <zvalue>45</zvalue>
+        <visible>1</visible>
+        <frame-class>4096</frame-class>
+        <frame-text-enabled>1</frame-text-enabled>
+        <frame-text>1056115639...</frame-text>
+        <transformation yRot="0" xRot="0" zRot="-1"/>
+        <mirror state="0"/>
+        <relativeFilePath>10561156394_2fdf8e1e1f_m.jpg</relativeFilePath>
+        <fileUrl>/home/dirk/workspace/blog_and_gallery/images/_orig/gallery/10561156394_2fdf8e1e1f_m.jpg</fileUrl>
+        <effects>
+          <effect param="1" type="8"/>
+          <effect param="1" type="8"/>
+        </effects>
+      </picture>
+      <picture>
+        <rect>
+          <x>-100</x>
+          <y>-150</y>
+          <w>200</w>
+          <h>300</h>
+        </rect>
+        <pos>
+          <x>685.333</x>
+          <y>132.333</y>
+        </pos>
+        <zvalue>46</zvalue>
+        <visible>1</visible>
+        <frame-class>4096</frame-class>
+        <frame-text-enabled>1</frame-text-enabled>
+        <frame-text>1095009882...</frame-text>
+        <transformation yRot="0" xRot="0" zRot="7"/>
+        <mirror state="0"/>
+        <relativeFilePath>10950098825_7487b29935_m.jpg</relativeFilePath>
+        <fileUrl>/home/dirk/workspace/blog_and_gallery/images/_orig/gallery/10950098825_7487b29935_m.jpg</fileUrl>
+        <effects>
+          <effect param="1" type="8"/>
+          <effect param="1" type="8"/>
+        </effects>
+      </picture>
+      <picture>
+        <rect>
+          <x>-100</x>
+          <y>-66</y>
+          <w>200</w>
+          <h>133</h>
+        </rect>
+        <pos>
+          <x>1164.33</x>
+          <y>663.333</y>
+        </pos>
+        <zvalue>47</zvalue>
+        <visible>1</visible>
+        <frame-class>4096</frame-class>
+        <frame-text-enabled>1</frame-text-enabled>
+        <frame-text>1232020675...</frame-text>
+        <transformation yRot="0" xRot="0" zRot="-11"/>
+        <mirror state="0"/>
+        <relativeFilePath>12320206755_2bd4534b0c_m.jpg</relativeFilePath>
+        <fileUrl>/home/dirk/workspace/blog_and_gallery/images/_orig/gallery/12320206755_2bd4534b0c_m.jpg</fileUrl>
+        <effects>
+          <effect param="1" type="8"/>
+          <effect param="1" type="8"/>
+        </effects>
+      </picture>
+      <picture>
+        <rect>
+          <x>-100</x>
+          <y>-66</y>
+          <w>200</w>
+          <h>133</h>
+        </rect>
+        <pos>
+          <x>1154.33</x>
+          <y>122.333</y>
+        </pos>
+        <zvalue>48</zvalue>
+        <visible>1</visible>
+        <frame-class>4096</frame-class>
+        <frame-text-enabled>1</frame-text-enabled>
+        <frame-text>1241760388...</frame-text>
+        <transformation yRot="0" xRot="0" zRot="-11"/>
+        <mirror state="0"/>
+        <relativeFilePath>12417603884_b21112e573_m.jpg</relativeFilePath>
+        <fileUrl>/home/dirk/workspace/blog_and_gallery/images/_orig/gallery/12417603884_b21112e573_m.jpg</fileUrl>
+        <effects>
+          <effect param="1" type="8"/>
+          <effect param="1" type="8"/>
+        </effects>
+      </picture>
+      <picture>
+        <rect>
+          <x>-100</x>
+          <y>-66</y>
+          <w>200</w>
+          <h>133</h>
+        </rect>
+        <pos>
+          <x>1247.33</x>
+          <y>761.333</y>
+        </pos>
+        <zvalue>49</zvalue>
+        <visible>1</visible>
+        <frame-class>4096</frame-class>
+        <frame-text-enabled>1</frame-text-enabled>
+        <frame-text>1391025520...</frame-text>
+        <transformation yRot="0" xRot="0" zRot="22"/>
+        <mirror state="0"/>
+        <relativeFilePath>13910255208_c14db51b45_m.jpg</relativeFilePath>
+        <fileUrl>/home/dirk/workspace/blog_and_gallery/images/_orig/gallery/13910255208_c14db51b45_m.jpg</fileUrl>
+        <effects>
+          <effect param="1" type="8"/>
+          <effect param="1" type="8"/>
+          <effect param="1" type="8"/>
+        </effects>
+      </picture>
+      <picture>
+        <rect>
+          <x>-100</x>
+          <y>-66</y>
+          <w>200</w>
+          <h>133</h>
+        </rect>
+        <pos>
+          <x>1374.33</x>
+          <y>202.333</y>
+        </pos>
+        <zvalue>50</zvalue>
+        <visible>1</visible>
+        <frame-class>4096</frame-class>
+        <frame-text-enabled>1</frame-text-enabled>
+        <frame-text>1407835872...</frame-text>
+        <transformation yRot="0" xRot="0" zRot="15"/>
+        <mirror state="0"/>
+        <relativeFilePath>14078358727_01ce2418d7_m.jpg</relativeFilePath>
+        <fileUrl>/home/dirk/workspace/blog_and_gallery/images/_orig/gallery/14078358727_01ce2418d7_m.jpg</fileUrl>
+        <effects>
+          <effect param="1" type="8"/>
+          <effect param="1" type="8"/>
+        </effects>
+      </picture>
+    </content>
+    <preview><![CDATA[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]]></preview>
+  </canvas>
+</fotowall>

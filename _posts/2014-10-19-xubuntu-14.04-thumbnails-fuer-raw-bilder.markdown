@@ -1,0 +1,22 @@
+---
+layout: post
+title:  "xubuntu 14.04: Keine Thumbnails für RAW Bilder"
+date:   2014-10-19
+categories: linux xubuntu
+tags: Canon RAW CR2 Thumbnails Vorschau Thunar
+---
+Nachdem ich Xubuntu jetzt soweit installiert habe, habe ich Heute die ersten RAW Bilder von meiner Canon kopiert (CR2). Leider gab es in Thunar keine kleinen Vorschaubilder (Thumbnails) wie man das von JPG gewohnt ist.
+
+Wenn man so rum sucht findet mal viel für Ubuntu und ältere Versionen von Xubuntu. Einer der ältern Foren-Einträge für Xubuntu hat dann vorgeschlagen mal zu prüfen ob `tumbler` installiert ist. Thumbler ist dafür zuständig die Thumbnails zu erzeugen:
+
+> Tumbler is a D-Bus service for applications to request thumbnails for various URI schemes and MIME types. It is an implementation of the thumbnail management D-Bus specification described on http://live.gnome.org/ThumbnailerSpec.
+
+Tumbler war bei mir schon installiert.
+
+Nach etwas mehr lesen wurde vorgeschlagen mal die Packete `tumbler-raw-plugin` und `tumbler-plugins-extra` zu installieren. Leider gibt es das Packet `tumbler-raw-plugin` nicht mehr. Die Extras ließen sich aber installieren:
+
+{% highlight bash %}
+sudo apt-get install tumbler-plugins-extra
+{% endhighlight %}
+
+Und nachdem ich mich ausgeloggt und wieder eingeloggt habe wurden dann auch Thumbnails im Thunar sichtbar. :tada: :smiley:

@@ -1,0 +1,24 @@
+---
+layout: post
+title:  "xubuntu 14.04: Absturz von Chromium nach unlock"
+date:   2014-10-18
+categories: linux xubuntu
+tags: chrome chromium absturz crash
+---
+Nach der installation von Xubuntu 14.04 hatte ich manchmal Meldungen das der Chromeium abgestürzt sei. Manchmal war das dann auch der Fall. Manchmal ist er aber einfach weiter gelaufen. Nach einigen Tagen habe ich bemerkt das es (fast) immer passiert wenn ich nach länger Pause meinen Screen wieder entlocken muss (sieht bei Xubuntu jetzt fast so aus wie beim einloggen).
+
+Nach etwas recherche war es klar das ich nicht der einzige mit derartigen Problemen war:
+
+* [Issue 392777: Chrome "crashes" after I unlock Xubuntu screensaver](https://code.google.com/p/chromium/issues/detail?id=392777)
+* [Issue 389816: The GPU process crashes if sleeping > 10 sec](https://code.google.com/p/chromium/issues/detail?id=389816)
+
+Besonders die Kommentare im zweiten Issue waren sehr hilfreich (war auch schwerer zu finden). Der Chrome(ium) Browser muss mit `--disable-gpu-watchdog` gestartet werden damit die Abstürze verschwinden.
+
+Damit man nicht alle Menü-Entries ändern muss und `--disable-gpu-watchdog` auch sonst nicht vergessen kann (z.B. auf der Kommandozeile) kann man den Parameter einfach in `/etc/chromium-browser/default` eintragen:
+{% highlight bash %}
+[...]
+# Options to pass to chromium
+CHROMIUM_FLAGS="--disable-gpu-watchdog"
+[...]
+{% endhighlight %}
+Dannach waren die Probleme bei mir verschwunden.
