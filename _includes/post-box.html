@@ -1,0 +1,19 @@
+<div class="col-sm-6">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+        <h4><a href="{{post.url}}">{{ include.post.title }}</a><br/>
+            <small>{{ include.post.categories | join: ' > ' }}</small></h4>
+    </div>
+    <div class="panel-body">
+      {{ include.post.excerpt }}
+    </div>
+    <div class="panel-footer">
+        <div class="meta">
+            <span class="glyphicon glyphicon-cloud-upload"></span>&nbsp;&nbsp;{{ include.post.date | date: "%F" }}
+        </div>
+        {% if include.post.tags %}<div class="meta">
+            <span class="glyphicon glyphicon-tags"></span>&nbsp;&nbsp;{{ include.post.tags | join: ', ' }}
+        </div>{% endif %}
+    </div>
+  </div>
+</div>
