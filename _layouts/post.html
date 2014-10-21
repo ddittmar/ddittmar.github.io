@@ -5,8 +5,11 @@ layout: default
 <header class="page-header">
     <h1>{{ page.title }} <small>{{ page.subtitle }}</small></h1>
     <div class="meta">
-        <small>{{ page.date | date: "%F" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</small>
+        <span class="glyphicon glyphicon-cloud-upload"></span>&nbsp;&nbsp;{{ page.date | date: "%F" }}
     </div>
+    {% if page.tags %}<div class="meta">
+        <span class="glyphicon glyphicon-tags"></span>&nbsp;&nbsp;{{ page.tags | join: ', ' }}
+    </div>{% endif %}
 </header>
 
 <article>

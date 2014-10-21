@@ -29,11 +29,11 @@ header, footer {
     display: block;
 }
 
-header.page-header {
-    .meta {
-        color: $grey;
-    }
+.meta {
+    color: $grey;
+    font-size: 85%;
 }
+
 
 footer {
     background-color: $dark;

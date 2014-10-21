@@ -2,7 +2,7 @@
 layout: post
 title:  "Jekyll auf einem Ubuntu 14.04 installieren"
 date:   2014-10-11
-categories: ubuntu jekyll
+categories: linux ubuntu jekyll
 tags: installieren jekyll ubuntu
 ---
 Diese Seite wird mit [Jekyll](http://jekyllrb.com/) erstellt/betrieben. Da ich gerade einen neuen Laptop aufgesetzt habe musste ich ja auch Jekyll wieder an den Start kriegen. Ich hatte natürlich schon wieder vergessen was man da alles braucht. Hier eine schnelle Anleitung.
