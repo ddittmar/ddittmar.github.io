@@ -71,8 +71,10 @@ function drawPictures(pictures) {
             var url_thumb = buildFlickrPicUrl(pic, 'q');
             var url_image = buildFlickrPicUrl(pic, 'b');
             var $a = $('<a>')
+                .addClass('galleryImage')
                 .attr('href', url_image)
                 .attr('title', pic.title)
+                .attr('id', 'picid_' + pic.id)
                 .attr('data-gallery', '');
             var $img = $('<img>')
                 .attr('src', url_thumb)
@@ -144,7 +146,8 @@ function drawPhotosets(data) {
     _.each(data.photosets.photoset, function(photoset) {
         var $a = $('<a>')
             .addClass('loadAlbumGallery')
-            .attr('href', '#')
+            .attr('title', photoset.title._content) 
+            .attr('href', encodeURIComponent(photoset.title._content))
             .data('photoset_id', photoset.id)
             .text(photoset.title._content);
         var $li = $('<li>').append($a);
@@ -227,4 +230,8 @@ $(document).on('click', 'a#nextGalleryPage', function(e) {
     if (!$(this).parent('li').hasClass('disabled')) {
         nextGalleryPage();
     }
+});
+
+$(document).on('click', 'a.galleryImage', function(e) {
+    //console.log('click', $(this).attr('id'));
 });
