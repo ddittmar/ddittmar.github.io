@@ -99,17 +99,18 @@ function drawPictures(pictures) {
 
 function drawGallery(data) {
 	checkFlickrError(data);
-    var pictures = data.photos.photo;
-    drawPictures(pictures);
+    drawPictures(data.photos.photo);
 }
 
 function prevGalleryPage() {
     var page = $('#pager').data('page') - 1;
+    ga('send', 'event', 'page', 'click', 'prev', page);
     galleryFunction(page);
 }
 
 function nextGalleryPage() {
     var page = $('#pager').data('page') + 1;
+    ga('send', 'event', 'page', 'click', 'next', page); 
     galleryFunction(page);
 }
 
@@ -135,8 +136,7 @@ function drawGalleryWithPaging(data) {
 
 function drawAlbumWithPaging(data) {
     checkFlickrError(data);
-    var pictures = data.photoset.photo;
-    drawPictures(pictures);
+    drawPictures(data.photoset.photo);
     drawPaging(data.photoset.page, data.photoset.pages);
 }
 
@@ -204,12 +204,14 @@ function switchActiveGallery($this) {
 $(document).on('click', 'a#loadLatestUploadsGallery', function (e) {
     e.preventDefault();
     switchActiveGallery($(this));
+    ga('send', 'event', 'loadLatestUploadsGallery', 'click');
     loadLatestUploadsGallery(1);
 });
 
 $(document).on('click', 'a#loadInterestingnessGallery', function (e) {
     e.preventDefault();
     switchActiveGallery($(this));
+    ga('send', 'event', 'loadInterestingnessGallery', 'click');
     loadInterestingnessGallery(1);
 });
 
@@ -217,6 +219,7 @@ $(document).on('click', 'a.loadAlbumGallery', function(e) {
     e.preventDefault();
     switchActiveGallery($(this));
     var photoset_id = $(this).data('photoset_id');
+    ga('send', 'event', 'loadAlbumGallery', 'click', ('photosetid_' + photoset_id));
     loadAlbumGallery(photoset_id, 1);
 });
 
@@ -233,5 +236,5 @@ $(document).on('click', 'a#nextGalleryPage', function(e) {
 });
 
 $(document).on('click', 'a.galleryImage', function(e) {
-    //console.log('click', $(this).attr('id'));
+    ga('send', 'event', 'galleryImage', 'click', ('' + $(this).attr('id'))); 
 });
