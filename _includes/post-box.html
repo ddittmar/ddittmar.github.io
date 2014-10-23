@@ -2,7 +2,7 @@
   <div class="panel panel-default">
     <div class="panel-heading">
         <h4><a href="{{post.url}}">{{ include.post.title }}</a><br/>
-            <small>{{ include.post.categories | join: ' > ' }}</small></h4>
+            <small><span class="glyphicon glyphicon-hand-right"></span>&nbsp;&nbsp;{{ include.post.categories | join: ' > ' }}</small></h4>
     </div>
     <div class="panel-body">
       {{ include.post.excerpt }}
