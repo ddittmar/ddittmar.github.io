@@ -5,6 +5,7 @@ api_version: 1
 threadsafe: true
 default_expiration: "100d"
 
+handlers:
 - url: /(.+)
   static_files: static/\1
   upload: static/(.+)
