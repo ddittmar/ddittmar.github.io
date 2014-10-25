@@ -5,6 +5,9 @@ comments: true
 
 <header class="page-header">
     <h1>{{ page.title }} <small>{{ page.subtitle }}</small></h1>
+    {% if page.categories %}<div class="meta">
+        <span class="glyphicon glyphicon-hand-right"></span>&nbsp;&nbsp;{{ page.categories | join: ' > ' }}
+    </div>{% endif %}
     <div class="meta">
         <span class="glyphicon glyphicon-cloud-upload"></span>&nbsp;&nbsp;{{ page.date | date: "%F" }}
     </div>
@@ -21,10 +24,7 @@ comments: true
 <div style="margin: 60px 0 10px 0;">
     <div id="disqus_thread"></div>
     <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = 'ddittmar-github'; // required: replace example with your forum shortname
-
-        /* * * DON'T EDIT BELOW THIS LINE * * */
+        var disqus_shortname = 'ddittmar-github';
         (function() {
             var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
             dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
