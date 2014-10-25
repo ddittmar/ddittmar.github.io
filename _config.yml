@@ -2,7 +2,7 @@
 title: Dirk Dittmar
 #email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  Blog und Galerie von Dirk Dittmar. Der Blog eines Java-Enterprise-Web-Software-Developers und die Galerie eines ambitioniert Amateur-Fotographen.
+  Blog und Galerie von Dirk Dittmar. Der Blog eines Java-Enterprise-Web-Software-Developers und die Galerie eines ambitionierten Amateur-Fotographen.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://ddittmar.github.io" # the base hostname & protocol for your site
 twitter_username: dittma_d
