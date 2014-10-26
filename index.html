@@ -4,11 +4,10 @@ onDocumentReady: loadLandingPageGallery();
 ---
 
 <header class="paralax-page-header background-header3 bg-attachment-fixed" itemscope itemtype="http://data-vocabulary.org/Person">
-    <div><img itemprop="photo" src="//static-ddittmar.appspot.com/images/personal.jpg" width="150" height="153" alt="Dirk Dittmar" class="img-circle"/></div>
+    <div><img itemprop="photo" src="//static-ddittmar.appspot.com/images/personal.jpg" width="150" height="153" alt="Dirk Dittmar" class="img-thumbnail"/></div>
     <h1 itemprop="name">Dirk Dittmar</h1>
     <div><span itemprop="role">Java-Enterprise-Web-Software-Developer</span> und Amateur-Fotograph</div>
-    <div>aus <span itemprop="address" itemscope
-                   itemtype="http://data-vocabulary.org/Address"><span itemprop="locality">Hamburg</span></span></div>
+    <div>aus <span itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address"><span itemprop="locality">Hamburg</span></span></div>
 </header>
 
 <div class="bg-light">
@@ -28,15 +27,6 @@ onDocumentReady: loadLandingPageGallery();
             {% include post-box.html post=post %}
         {% endfor %}
       </div>
-<!--
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="alert alert-info alert-dismissible" role="alert">
-            subscribe <a class="alert-link" href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a>
-          </div>
-        </div>
-      </div>
--->
     </div>
 </div>
     

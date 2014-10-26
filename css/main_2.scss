@@ -58,7 +58,11 @@ footer {
 }
 
 blockquote {
-    font-style:italic;
+    font-style: italic;
+}
+
+.social {
+    margin-top: 20px;
 }
 
 .paralax-picture {
@@ -69,7 +73,7 @@ blockquote {
 	text-align: center;
 	color: $light;
 	min-height: 350px;
-	padding: 50px 50px 50px 50px;
+	padding: 50px;
 }
 
 .paralax-page-header {

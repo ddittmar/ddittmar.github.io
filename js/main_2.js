@@ -238,3 +238,13 @@ $(document).on('click', 'a#nextGalleryPage', function(e) {
 $(document).on('click', 'a.galleryImage', function(e) {
     ga('send', 'event', 'galleryImage', 'click', ('' + $(this).attr('id'))); 
 });
+
+$(document).on('click', '.social > a', function(e) {
+    e.preventDefault();
+    var url = $(this).attr('href');
+    ga('send', 'event', 'social', 'click', url, {
+        'hitCallback' : function () {
+            document.location = url;
+        }
+    });
+});
