@@ -9,7 +9,7 @@ Ich hatte mich noch vor dem Livegang dieser Seite dazu entschlossen die Kompatib
 
 Zum Glück kann man sich seit einiger Zeit die IE's als VM Images bei [modern.ie](http://modern.ie) runter laden. Das hätte ich sonst nie gesehen:
 
-<img class="img-responsive" style="width: auto;" src="/images/blog/Screenshot-IE9-Bootstrap-Bug.png" alt="Screenshot">
+<img class="img-responsive" style="width: auto;" src="//static-ddittmar.appspot.com/images/blog/Screenshot-IE9-Bootstrap-Bug.png" alt="Screenshot">
 
 Das Bild wird offenbar auf die volle Breite des umschließenden Kontainers aufgezogen. Wenn man mal mit dem IE Inspector (`F12`) guckt, ist in der Klasse `img-thumbnail` einen Regel `width: 100% \9;` definiert, die in 'normalen' Browsern nicht ausgertet wird. Wenn man die Regel deaktiviert wird das Bild sofort korrekt dargestellt.
 
