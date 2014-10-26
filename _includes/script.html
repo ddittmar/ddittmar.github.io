@@ -26,5 +26,8 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script src="//static-ddittmar.appspot.com/js/main_2.js"></script>
-<script src="//static-ddittmar.appspot.com/js/jquery.blueimp-gallery.min.js"></script>
-<script src="//static-ddittmar.appspot.com/js/bootstrap-image-gallery.min.js"></script>
+{% if page.extraJs %}
+{% for extraJs in page.extraJs %}
+<script src="{{ extraJs }}"></script>
+{% endfor %}
+{% endif %}
