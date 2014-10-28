@@ -40,10 +40,10 @@ footer {
     min-height: 150px;
     padding: 15px;
     color: $grey;
-    margin-top: 15px;
+    margin: 15px 0;
     
     .row {
-        padding: 0 20px;
+        padding: 10px 20px;
     }
     
     a {
@@ -61,8 +61,13 @@ blockquote {
     font-style: italic;
 }
 
-.social {
-    margin-top: 20px;
+.social > a {
+    display: block;
+    float: left;
+    margin-left: 0;
+    margin-right: 5px;
+    margin-top: 0;
+    margin-bottom: 5px;
 }
 
 .paralax-picture {
