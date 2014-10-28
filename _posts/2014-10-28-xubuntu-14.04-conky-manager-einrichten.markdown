@@ -1,0 +1,33 @@
+---
+layout: post
+title:  "xubuntu 14.04: Conky-Manager einrichten"
+date:   2014-10-28
+categories: linux xubunutu
+tags: conky themes
+---
+Habt ihr schon mal diese coolen Desktop-Widgets gesehen, die offensichtlich alle Informationen über den Zustand eures Systems anzeigen? Diese Widgets werden mit [Conky](http://conky.sourceforge.net/) erstellt. Für Conky gibt es diverse Themes. Damit man diese Themes leichter verwalten kann gibt es den [Conky-Manager](http://www.teejeetech.in/p/conky-manager.html). Wie man den einrichtet und wie man Themes installiert sehen wir uns mal an.
+
+Dank Conky sieht mein Desktop so aus (zumindest der rechte Teil):
+
+<img class="img-responsive" style="width: auto;" src="//static-ddittmar.appspot.com/images/blog/Screenshot-conky_ddmod.png" alt="Screenshot">
+
+Die Installation des Managers (inkl. Conky) ist recht einfach:
+
+{% highlight bash %}
+sudo apt-add-repository -y ppa:teejee2008/ppa
+sudo apt-get update
+sudo apt-get install conky-manager
+{% endhighlight %}
+
+Nach der Installation kann man den Manager starten und schon mal ein paar Themes ausprobieren. Die ganzen Themes werden in `~/.conky` abgelegt. Falls euch mein Theme aus dem Screenshot gefällt könnt ihr es dort einfach installieren. Entweder holt ihr euch das neueste Release von der GitHub Seite ([conky_ddmod/realeases](https://github.com/ddittmar/conky_ddmod/releases)) oder cloned das Repository einfach direkt in das Verzeichnis:
+
+{% highlight bash %}
+cd ~/.conky
+git clone https://github.com/ddittmar/conky_ddmod.git
+{% endhighlight %}
+
+Ich habe auch noch ein anderes Conky-Widget geschieben, dass euch das aktuelle Wetter von [OpenWeatherMap](http://openweathermap.org/) an eurem aktuellen Standort anzeigt (zumindest da wo Google glaubt das ihr euch befindet). Das Widget hängt bei mir unten zentriert auf dem Desktop und sieht so aus:
+
+<img class="img-responsive" style="width: auto;" src="//static-ddittmar.appspot.com/images/blog/Screenshot-conky_ddweather.png" alt="Screenshot">
+
+Das Widget findet ihr auch auf GitHub ([conky_ddweather](https://github.com/ddittmar/conky_ddweather)).
