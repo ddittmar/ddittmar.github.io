@@ -9,7 +9,7 @@ Habt ihr schon mal diese coolen Desktop-Widgets gesehen, die offensichtlich alle
 
 Dank Conky sieht mein Desktop so aus (zumindest der rechte Teil):
 
-<img class="img-responsive" style="width: auto;" src="//static-ddittmar.appspot.com/images/blog/Screenshot-conky_ddmod.png" alt="Screenshot">
+<img class="img-responsive" src="//static-ddittmar.appspot.com/images/blog/Screenshot-conky_ddmod.png" alt="Screenshot">
 
 Die Installation des Managers (inkl. Conky) ist recht einfach:
 
@@ -28,6 +28,6 @@ git clone https://github.com/ddittmar/conky_ddmod.git
 
 Ich habe auch noch ein anderes Conky-Widget geschieben, dass euch das aktuelle Wetter von [OpenWeatherMap](http://openweathermap.org/) an eurem aktuellen Standort anzeigt (zumindest da wo Google glaubt das ihr euch befindet). Das Widget hängt bei mir unten zentriert auf dem Desktop und sieht so aus:
 
-<img class="img-responsive" style="width: auto;" src="//static-ddittmar.appspot.com/images/blog/Screenshot-conky_ddweather.png" alt="Screenshot">
+<img class="img-responsive" src="//static-ddittmar.appspot.com/images/blog/Screenshot-conky_ddweather.png" alt="Screenshot">
 
 Das Widget findet ihr auch auf GitHub ([conky_ddweather](https://github.com/ddittmar/conky_ddweather)).
