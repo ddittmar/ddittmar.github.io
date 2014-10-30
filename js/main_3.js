@@ -147,7 +147,7 @@ function drawPhotosets(data) {
         var $a = $('<a>')
             .addClass('loadAlbumGallery')
             .attr('title', photoset.title._content) 
-            .attr('href', encodeURIComponent(photoset.title._content))
+            .attr('href', '#' + encodeURIComponent(photoset.title._content))
             .data('photoset_id', photoset.id)
             .text(photoset.title._content);
         var $li = $('<li>').append($a);
