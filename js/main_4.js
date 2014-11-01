@@ -1,8 +1,11 @@
 "use strict";
 
-var USER_ID  = '36825657@N03';
-var API_KEY  = '5829e1bcf08076b3ad92b34958fe8c3b';
-var BASE_URL = 'https://api.flickr.com/services/rest/';
+var GOOGL_API_KEY = 'AIzaSyCnShRHKnpRuViY9tfYPHEzeGxycwN__8Y';
+var GOOGL_URL     = 'https://www.googleapis.com/urlshortener/v1/url';
+
+var USER_ID       = '36825657@N03';
+var API_KEY       = '5829e1bcf08076b3ad92b34958fe8c3b';
+var BASE_URL      = 'https://api.flickr.com/services/rest/';
 
 /** stores the load function of the actual gallery */
 var galleryFunction;
@@ -245,6 +248,37 @@ $(document).on('click', '.social > a', function(e) {
     ga('send', 'event', 'social', 'click', url, {
         'hitCallback' : function () {
             document.location = url;
+        }
+    });
+});
+
+$(document).on('click', 'a.btn-twitter', function(e) {
+    e.preventDefault();
+    var $this = $(this);
+    var longUrl = $this.data('url');
+    ga('send', 'event', 'btn-twitter', 'click', longUrl, {
+        'hitCallback' : function () {
+            var gurl = String.format('{0}?key={1}', GOOGL_URL, GOOGL_API_KEY);
+            $.ajax({
+                url: gurl,
+                type: 'POST',
+                data: JSON.stringify({ 'longUrl' : longUrl }),
+                processData: false,
+                contentType: "application/json",
+                dataType: 'json',
+                success: function(data) {
+                    var shortUrl = data.id;
+                    var location = String.format(
+                        '{0}?url={1}&via={2}&hashtags={3}&text={4}',
+                        $this.attr('href'),
+                        encodeURIComponent(shortUrl),
+                        $this.data('via'),
+                        $this.data('hashtags'),
+                        $this.data('text')
+                    );
+                    document.location = location;
+                }
+            });
         }
     });
 });

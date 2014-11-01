@@ -22,7 +22,12 @@ comments: true
 
 <div class="well clearfix share">
     <div class="pull-left">
-        <a class="btn btn-block btn-social btn-twitter">
+        <a class="btn btn-block btn-social btn-twitter"
+           href="https://twitter.com/share"
+           data-url="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"
+           data-via="dittma_d"
+           data-hashtags="{{ page.tags | join: ',' | cgi_escape }}"
+           data-text="{{ page.title | cgi_escape }}">
             <i class="fa fa-twitter"></i> teilen
         </a>
     </div>
