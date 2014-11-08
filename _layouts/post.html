@@ -20,6 +20,36 @@ comments: true
 {{ content }}
 </article>
 
+<div class="well clearfix share">
+    <div class="pull-left">
+        <a class="btn btn-block btn-social btn-twitter"
+           href="https://twitter.com/share"
+           data-url="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"
+           data-via="dittma_d"
+           data-hashtags="{{ page.tags | join: ',' | cgi_escape }}"
+           data-text="{{ page.title | cgi_escape }}">
+            <i class="fa fa-twitter"></i> teilen
+        </a>
+    </div>
+    <div class="pull-left">
+        <a class="btn btn-block btn-social btn-google-plus"
+           href="https://plus.google.com/share"
+           data-url="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+            <i class="fa fa-google-plus"></i> teilen
+        </a>
+    </div>
+    <div class="pull-left">
+        <a class="btn btn-block btn-social btn-facebook"
+           href="https://www.facebook.com/dialog/share"
+           data-app_id="766010240133574"
+           data-display="page"
+           data-href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"
+           data-redirect_uri="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+            <i class="fa fa-facebook"></i> teilen
+        </a>
+    </div>
+</div>
+
 {% if page.comments %}
 <div style="margin: 60px 0 10px 0;">
     <div id="disqus_thread"></div>
