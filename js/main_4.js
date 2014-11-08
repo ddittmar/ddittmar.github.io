@@ -282,3 +282,34 @@ $(document).on('click', 'a.btn-twitter', function(e) {
         }
     });
 });
+
+$(document).on('click', 'a.btn-google-plus', function(e) {
+    e.preventDefault();
+    var $this = $(this);
+    ga('send', 'event', 'btn-google-plus', 'click', $this.data('url'), {
+        'hitCallback' : function () {
+            var location = String.format('{0}?url={1}', $this.attr('href'), encodeURIComponent($this.data('url')));
+            window.open(location, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');
+        }
+    });
+});
+
+$(document).on('click', 'a.btn-facebook', function(e) {
+    e.preventDefault();
+    var $this = $(this);
+    var url = $this.data('href')
+    ga('send', 'event', 'btn-facebook', 'click', url, {
+        'hitCallback' : function () {
+            var href = $this.attr('href');
+            var location = String.format(
+                '{0}?app_id={1}&display={2}&href={3}&redirect_uri={4}',
+                href,
+                $this.data('app_id'),
+                $this.data('display'),
+                encodeURIComponent(url),
+                encodeURIComponent($this.data('redirect_uri'))
+            );
+            document.location = location;
+        }
+    });
+});
