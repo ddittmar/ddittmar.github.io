@@ -63,3 +63,5 @@ $('.menu-item2').hover(
 );
 {% endhighlight %}
 Das lässt sich natürlich alles noch im Detail verbessern. Wer mehr wissen möchte lese die Dokumention von Jquery über [Effekte](http://learn.jquery.com/effects/).
+
+<img src="/images/blog/jQuery-Logo.png" class="img-responsive" alt="jQuery Logo" width="400" height="102" />
