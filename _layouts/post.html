@@ -16,7 +16,9 @@ comments: true
     </div>{% endif %}
 </header>
 
-{% if page.og_img %}{% if page.show_head_img %}<img src="{{ page.og_img }}" class="img-responsive" /><br/>{% endif %}{% endif %}
+{% if page.og_img %}{% if page.show_head_img %}
+<img src="{{ page.og_img }}" class="img-responsive"{% if page.og_img-alt %} alt="{{page.og_img-alt}}"{% endif %}{% if page.og_img-width %} width="{{page.og_img-width}}"{% endif %}{% if page.og_img-height %} height="{{page.og_img-height}}"{% endif %} /><br/>
+{% endif %}{% endif %}
 
 <article>
 {{ content }}

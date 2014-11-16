@@ -5,6 +5,9 @@ date:   2014-10-11
 categories: linux ubuntu jekyll
 tags: installieren jekyll ubuntu
 og_img: http://static-ddittmar.appspot.com/images/blog/jekyll.png
+og_img-alt: Jekyll Logo
+og_img-width: 498
+og_img-height: 230
 show_head_img: true
 ---
 Diese Seite wird mit [Jekyll](http://jekyllrb.com/) erstellt/betrieben. Da ich gerade einen neuen Laptop aufgesetzt habe musste ich ja auch Jekyll wieder an den Start kriegen. Ich hatte natürlich schon wieder vergessen was man da alles braucht. Hier eine schnelle Anleitung.

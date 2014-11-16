@@ -22,6 +22,9 @@ onDocumentReady: > ##
         }
     );
 og_img: http://static-ddittmar.appspot.com/images/blog/jQuery-Logo.png
+og_img-alt: jQuery Logo
+og_img-width: 400
+og_img-height: 102
 show_head_img: true
 ---
 Ich habe ja schon lange kein Menü mehr selber gestrickt. Das gibt es ja entweder fertig von Bootstrap (o.ä.) oder der Designer hat ein Plugin verwendet. Aber jetzt war es mal wieder soweit und ich musste mal selber was machen. Kennt ihr diesen Effekt wenn ein (schlecht) programmiertes Menü sich alle `hover` Events zu merken scheint und das Menü immer noch auf und zu geht obwohl man schon lange nichts mehr macht? Hier ein Beispiel:
