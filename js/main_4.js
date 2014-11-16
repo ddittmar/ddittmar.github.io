@@ -283,8 +283,8 @@ $(document).on('click', 'a.btn-twitter', function(e) {
     });
 });
 
-var clickBtnGooglePlus = function(e) {
-    var $this = $(this);
+var clickBtnGooglePlus = function(self) {
+    var $this = $(self);
     ga('send', 'event', 'btn-google-plus', 'click', $this.data('url'));
     var location = String.format('{0}?url={1}', $this.attr('href'), encodeURIComponent($this.data('url')));
     window.open(location, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');
