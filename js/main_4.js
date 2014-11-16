@@ -284,7 +284,6 @@ $(document).on('click', 'a.btn-twitter', function(e) {
 });
 
 $(document).on('click', 'a.btn-google-plus', function(e) {
-    e.preventDefault();
     var $this = $(this);
     ga('send', 'event', 'btn-google-plus', 'click', $this.data('url'), {
         'hitCallback' : function () {
@@ -292,6 +291,7 @@ $(document).on('click', 'a.btn-google-plus', function(e) {
             window.open(location, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');
         }
     });
+    return false;
 });
 
 $(document).on('click', 'a.btn-facebook', function(e) {
