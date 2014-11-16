@@ -4,6 +4,7 @@ title:  "xubuntu 14.04: Conky-Manager einrichten"
 date:   2014-10-28
 categories: linux xubunutu
 tags: conky themes
+og_img: http://static-ddittmar.appspot.com/images/blog/Screenshot-conky_ddmod.png
 ---
 Habt ihr schon mal diese coolen Desktop-Widgets gesehen, die offensichtlich alle Informationen über den Zustand eures Systems anzeigen? Diese Widgets werden mit [Conky](http://conky.sourceforge.net/) erstellt. Für Conky gibt es diverse Themes. Damit man diese Themes leichter verwalten kann gibt es den [Conky-Manager](http://www.teejeetech.in/p/conky-manager.html). Wie man den einrichtet und wie man Themes installiert sehen wir uns mal an.
 

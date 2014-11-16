@@ -22,6 +22,7 @@ onDocumentReady: > ##
         }
     );
 og_img: http://static-ddittmar.appspot.com/images/blog/jQuery-Logo.png
+show_head_img: true
 ---
 Ich habe ja schon lange kein Menü mehr selber gestrickt. Das gibt es ja entweder fertig von Bootstrap (o.ä.) oder der Designer hat ein Plugin verwendet. Aber jetzt war es mal wieder soweit und ich musste mal selber was machen. Kennt ihr diesen Effekt wenn ein (schlecht) programmiertes Menü sich alle `hover` Events zu merken scheint und das Menü immer noch auf und zu geht obwohl man schon lange nichts mehr macht? Hier ein Beispiel:
 
@@ -64,5 +65,3 @@ $('.menu-item2').hover(
 );
 {% endhighlight %}
 Das lässt sich natürlich alles noch im Detail verbessern. Wer mehr wissen möchte lese die Dokumention von Jquery über [Effekte](http://learn.jquery.com/effects/).
-
-<img src="//static-ddittmar.appspot.com/images/blog/jQuery-Logo.png" class="img-responsive" alt="jQuery Logo" width="400" height="102" />

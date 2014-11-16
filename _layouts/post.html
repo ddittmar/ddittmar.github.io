@@ -16,6 +16,8 @@ comments: true
     </div>{% endif %}
 </header>
 
+{% if page.og_img %}{% if page.show_head_img %}<img src="{{ page.og_img }}" class="img-responsive" /><br/>{% endif %}{% endif %}
+
 <article>
 {{ content }}
 </article>

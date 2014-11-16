@@ -5,10 +5,10 @@ date:   2014-10-11
 categories: linux ubuntu jekyll
 tags: installieren jekyll ubuntu
 og_img: http://static-ddittmar.appspot.com/images/blog/jekyll.png
+show_head_img: true
 ---
 Diese Seite wird mit [Jekyll](http://jekyllrb.com/) erstellt/betrieben. Da ich gerade einen neuen Laptop aufgesetzt habe musste ich ja auch Jekyll wieder an den Start kriegen. Ich hatte natürlich schon wieder vergessen was man da alles braucht. Hier eine schnelle Anleitung.
 
-<img src="//static-ddittmar.appspot.com/images/blog/jekyll.png" class="img-responsive" alt="Jekyll Logo" width="498" height="230" />
 Jekyll ist in Ruby geschrieben. Man braucht also erstmal Ruby (`ruby-dev` und `make` bracht man um Native-Erweiterungen kompilieren zu können):
 {% highlight bash %}
 sudo apt-get install ruby ruby-dev make

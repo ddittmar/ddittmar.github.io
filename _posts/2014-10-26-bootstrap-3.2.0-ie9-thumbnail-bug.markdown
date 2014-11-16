@@ -4,6 +4,7 @@ title:  "Bootstrap 3.2.0 und der IE9 'img-thumbnail' Bug"
 date:   2014-10-26
 categories: css bootstrap
 tags: bootstrap bug IE9 modern.ie
+og_img: http://static-ddittmar.appspot.com/images/blog/Screenshot-IE9-Bootstrap-Bug.png
 ---
 Ich hatte mich noch vor dem Livegang dieser Seite dazu entschlossen die Kompatibilität für IE8 aus dem Fenster zu werfen. Das hat keine Zweck mehr mit dem Ding. Als ich allerdings mit dem IE9 mal geguckt habe, bin ich offensichtlich auf einen Bug im Bootstrap getroffen.
 
