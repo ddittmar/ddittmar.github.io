@@ -37,10 +37,10 @@ Hier der Code mit dem ihr den Effekt nachstellen könnt:
 {% endhighlight %}
 Wie man sieht ist gar nichts los. Eine einfache Tabelle mit ein bisschen CSS eben.
 Normale Browser (hier Chrome) zeigen das auch wie erwartet an:
-<img class="img-responsive" src="//static-ddittmar.appspot.com/images/blog/Screenshot-Chrome-Table.png" alt="Screenshot">
+<img class="img-responsive" src="//static-ddittmar.appspot.com/images/blog/Screenshot-Chrome-Table.png" width="513" height="301" alt="Screenshot Chrome">
 
 Die Tabelle im IE8 und IE9 sieht so aus (ab IE10 ist übrigens alles wieder normal):
-<img class="img-responsive" src="//static-ddittmar.appspot.com/images/blog/Screenshot-IE-Table.png" alt="Screenshot">
+<img class="img-responsive" src="//static-ddittmar.appspot.com/images/blog/Screenshot-IE-Table.png" width="511" height="121" alt="Screenshot IE">
 
 Wo her (zum Henker) kommt dieser Abstand in der ersten Zeile? Das Beste ist das der Abstand nur zustande kommt wenn eine der Zellen eine Umbruch hat. Ihr müsst mal den etwas längeren "Lorem ipsum" Text kürzen dann verschwindet der Abstand in der oberen Zelle auch (wtf?).
 
