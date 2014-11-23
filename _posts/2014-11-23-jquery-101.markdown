@@ -138,6 +138,6 @@ Hier kann man mehrere Dinge sehen:
 
 ## und weiter?
 
-Ab hier kann man schon mal auf die excellente jQuery Dokuementation verwesen. Dort werdet ihr sicher (noch) schlauer.
+Ab hier kann man schon mal auf die excellente jQuery Dokumentation verwesen. Dort werdet ihr sicher (noch) schlauer.
 
 Ich denke hier werden dann demnächst noch weitere Tipps & Tricks in Sachen jQuery auftauchen.
