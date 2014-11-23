@@ -1,9 +1,15 @@
 ---
 layout: post
 title:  "jQuery 101"
+subtitle: "Grundlagenwissen"
 date:   2014-11-04
 categories: javascript jquery
 tags: jquery basics
+og_img: http://static-ddittmar.appspot.com/images/blog/jQuery-Logo.png
+og_img-alt: jQuery Logo
+og_img-width: 400
+og_img-height: 102
+show_head_img: true
 ---
 Ich musste gerade wieder feststellen das einige Entwickler noch nicht oder sehr wenig mit jQuery in Berührung gekommen sind. Deshalb hier ein kleine Zusammenfassung um die Grundlagen zu klären. Später vielleicht noch ein paar weiterführende Artikel um fortgeschrittene Themen wie Plugins und ähnliches zu zeigen.
 
@@ -27,7 +33,7 @@ $(document).ready(function() {
 });
 {% endhighlight %}
 
-Alles was wir im weitern sehen werden solltet ihr innerhalb dieser Funktion machen.
+Alles was wir im weitern sehen werden solltet ihr innerhalb dieser Funktion machen (oder zum experimentieren auf der Console).
 
 ## Selektion
 
@@ -36,3 +42,27 @@ Alles was wir im weitern sehen werden solltet ihr innerhalb dieser Funktion mach
 Was jQuery so stark macht ist die Art wie man Elemente im Dokument selektiert. Das konnte vorher so kein Framework und ist die Wunderwaffe in der DOM manipulation.
 
 Selektiert wird mit Hilfe von CSS Selektoren. jQuery unterstützt (fast) alle CSS3 Selektoren auch wenn der Browser den Selektor eigentlich nicht unterstützt. Zusätzlich werden noch ein paar Selektoren unterstützt die nicht mal CSS3 kann.
+
+Wer etwas CSS kann wird sich in den folgenden Beispielen schnell zurecht finden. Die Beispiele können leicht auf dieser Seite in der Entwicklungs-Console des Browsers getestet werden.
+
+Hier werden alle `<h2>` Überschriften selectiert und der enthaltene Text auf `'foobar'` gesetzt:
+{% highlight javascript %}
+$('h2').text('foobar');
+{% endhighlight %}
+
+Oder man versteckt alle `<blockquote>` Elemente auf dieser Seite:
+{% highlight javascript %}
+$('blockquote').hide();
+{% endhighlight %}
+
+Und genau so kann man sie auch wieder sichtbar machen:
+{% highlight javascript %}
+$('blockquote').show();
+{% endhighlight %}
+
+Etwas mehr CSS? Alle Links mit der Klasse `btn` innerhalb eines Wells (Bootstrap) ausblenden (unten die Social-Share Buttons):
+{% highlight javascript %}
+$('.well a.btn').hide(400);
+{% endhighlight %}
+
+Man erkennt leicht das eingangs erwähnte Prinzip von jQuery: "Elemente auswählen und irgendwas mit ihnen machen". Was man auch erkennt ist das jQuery **immer** auf einer Menge aus Elementen operiert (wie CSS auch). Das gilt auch wenn man etwas mit Hilfe der `id` selektiert.
