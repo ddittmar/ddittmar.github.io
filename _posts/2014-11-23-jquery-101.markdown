@@ -66,3 +66,19 @@ $('.well a.btn').hide(400);
 {% endhighlight %}
 
 Man erkennt leicht das eingangs erwähnte Prinzip von jQuery: "Elemente auswählen und irgendwas mit ihnen machen". Was man auch erkennt ist das jQuery **immer** auf einer Menge aus Elementen operiert (wie CSS auch). Das gilt auch wenn man etwas mit Hilfe der `id` selektiert.
+
+## Operations-Verkettung
+
+jQuery hat die praktische Eigenart das jede Operation die Menge zurück gibt auf der die Operations angewendet wurde. Dadurch kann man sehr gut mehrere Operationen aneinander hängen.
+
+Alle Social-Share Buttons wählen und verstecken; kurz warten und wieder einblenden:
+{% highlight javascript %}
+$('.well a.btn').hide(400).delay(1000).show(400);
+{% endhighlight %}
+Ist das cool? Alles in einer Zeile :grin:. Wenn man sich überlegt wie das sonst aussehn müsste:
+{% highlight javascript %}
+var buttons = $('.well a.btn');
+buttons.hide(400);
+buttons.delay(1000);
+buttons.show(400);
+{% endhighlight %}
