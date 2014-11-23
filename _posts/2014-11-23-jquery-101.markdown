@@ -1,0 +1,38 @@
+---
+layout: post
+title:  "jQuery 101"
+date:   2014-11-04
+categories: javascript jquery
+tags: jquery basics
+---
+Ich musste gerade wieder feststellen das einige Entwickler noch nicht oder sehr wenig mit jQuery in Berührung gekommen sind. Deshalb hier ein kleine Zusammenfassung um die Grundlagen zu klären. Später vielleicht noch ein paar weiterführende Artikel um fortgeschrittene Themen wie Plugins und ähnliches zu zeigen.
+
+## jQuery?
+
+Falls jemand noch nie etwas von [jQuery](http://jquery.com/) gehört hat:
+
+> jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.
+
+Wie der geneigte Leser bemerkt hat geht es hier um JavaScript. Das gute an jQuery ist das man auch ohne erweiterte JS Kenntnisse sehr weit kommt. Es wird hier also keine Enführung in JS geben. Für eine wirklich sehr gute Einführung empfehle ich das Buch *JavaScript: The Good Parts [Douglas Crockford - 2008]*. Das Buch öffnet einem die Augen (wirklich) und ist auch eher dünn und schnell zu lesen.
+
+## Grundlegendes
+
+Nachdem man jQuery in die HTML-Seite eingebunden hat regestriert jQuery eine Funktionen am globalen Browser-Objekt `window`. Diese Funktion wird unter zwei Namen registriert. Der eine Name ist `jquery` und der andere Name ist `$`. Man kann gerne beide Namen verwenden allerdings ist es üblich die Funktion mit dem Namen `$` zu verwenden. Das heißt das alles was wir weiter unten mit jQuery machen mit der `$` Funktion zu hat.
+
+Da jQuery dazu verwendet wird das HTML-Document zu manuipulieren ist es ratsam erst etwas mit jQuery zu machen wenn das Dokument vom Browser geladen wurde. Da die Macher von jQuery das auch wissen gibt es da natürlich etwas:
+
+{% highlight javascript %}
+$(document).ready(function() {
+    // Diese Funktion wird ausgeführt wenn der Browser das Dokument geladen hat.
+});
+{% endhighlight %}
+
+Alles was wir im weitern sehen werden solltet ihr innerhalb dieser Funktion machen.
+
+## Selektion
+
+> The most basic concept of jQuery is to "select some elements and do something with them".
+
+Was jQuery so stark macht ist die Art wie man Elemente im Dokument selektiert. Das konnte vorher so kein Framework und ist die Wunderwaffe in der DOM manipulation.
+
+Selektiert wird mit Hilfe von CSS Selektoren. jQuery unterstützt (fast) alle CSS3 Selektoren auch wenn der Browser den Selektor eigentlich nicht unterstützt. Zusätzlich werden noch ein paar Selektoren unterstützt die nicht mal CSS3 kann.
