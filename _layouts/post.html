@@ -5,13 +5,13 @@ comments: true
 
 <header class="page-header">
     <h1>{{ page.title }} <small>{{ page.subtitle }}</small></h1>
-    {% if page.categories %}<div class="meta">
+    {% if page.categories.size > 0 %}<div class="meta">
         <span class="glyphicon glyphicon-hand-right"></span>&nbsp;&nbsp;{{ page.categories | join: ' > ' }}
     </div>{% endif %}
     <div class="meta">
         <span class="glyphicon glyphicon-cloud-upload"></span>&nbsp;&nbsp;{{ page.date | date: "%F" }}
     </div>
-    {% if page.tags %}<div class="meta">
+    {% if page.tags.size > 0 %}<div class="meta">
         <span class="glyphicon glyphicon-tags"></span>&nbsp;&nbsp;{{ page.tags | join: ', ' }}
     </div>{% endif %}
 </header>
