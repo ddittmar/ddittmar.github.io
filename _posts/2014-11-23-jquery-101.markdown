@@ -10,6 +10,12 @@ og_img-alt: jQuery Logo
 og_img-width: 400
 og_img-height: 102
 show_head_img: true
+onDocumentReady: > ###
+    $('h2').click(function(e) {
+        var text = $(this).text();
+        alert(text);
+        e.preventDefault();
+    });
 ---
 Ich musste gerade wieder feststellen das einige Entwickler noch nicht oder sehr wenig mit jQuery in Berührung gekommen sind. Deshalb hier ein kleine Zusammenfassung um die Grundlagen zu klären. Später vielleicht noch ein paar weiterführende Artikel um fortgeschrittene Themen wie Plugins und ähnliches zu zeigen.
 
@@ -67,18 +73,71 @@ $('.well a.btn').hide(400);
 
 Man erkennt leicht das eingangs erwähnte Prinzip von jQuery: "Elemente auswählen und irgendwas mit ihnen machen". Was man auch erkennt ist das jQuery **immer** auf einer Menge aus Elementen operiert (wie CSS auch). Das gilt auch wenn man etwas mit Hilfe der `id` selektiert.
 
-## Operations-Verkettung
+## Methoden
 
-jQuery hat die praktische Eigenart das jede Operation die Menge zurück gibt auf der die Operations angewendet wurde. Dadurch kann man sehr gut mehrere Operationen aneinander hängen.
+### Operator-Verkettung
+
+jQuery hat die praktische Eigenart das jede Operation die Menge zurück gibt auf der die Operation angewendet wurde. Dadurch kann man sehr gut mehrere Operationen aneinander hängen.
 
 Alle Social-Share Buttons wählen und verstecken; kurz warten und wieder einblenden:
 {% highlight javascript %}
 $('.well a.btn').hide(400).delay(1000).show(400);
 {% endhighlight %}
+
 Ist das cool? Alles in einer Zeile :grin:. Wenn man sich überlegt wie das sonst aussehn müsste:
+
 {% highlight javascript %}
 var buttons = $('.well a.btn');
 buttons.hide(400);
 buttons.delay(1000);
 buttons.show(400);
 {% endhighlight %}
+
+### Getter und Setter
+
+Eine weitere Eigenart von jQuery ist es das Methoden die eine Eigenschaft eines Elements verändern (fast immer) gleichzeitig als Getter und als Setter funktionieren. Um z.B. den Text des Attributs `href` eines Links abzufragen:
+{% highlight javascript %}
+$('a.btn-facebook').attr('href');
+{% endhighlight %}
+
+Wenn man das Attribut `href` setzen möchte gibt man einfach einen Parameter mehr an:
+{% highlight javascript %}
+$('a.btn-facebook').attr('href', 'http://google.de');
+{% endhighlight %}
+
+Bei Attributen die beim holen keinen Parameter brauchen funktioniert das dann analog:
+{% highlight javascript %}
+$('.well').height(); // die Höhe des Wells holen
+$('.well').height(500); // die Höhe des Wells setzen
+{% endhighlight %}
+
+Wenn der Selektor mehrere Treffer geliefert hat, wird beim holen einer Eigenschafft immer nur der Wert des ersten Elements in der Trefferliste zurück gegeben wärend beim setzen alle Elemente in der Trefferliste manipuliert werden:
+{% highlight javascript %}
+$('a.btn').attr('href'); // liefert den Wert des ersten Links
+$('a.btn').attr('href', 'http://foobar.de'); // setzt alle Links
+{% endhighlight %}
+
+## Ereignisse
+
+Was wäre eine Webseite ohne Ereignisse wie z.B. das drücken eines Links? Wohl nicht so viel :smile:.
+
+Damit man einfach auf solche Ereignisse reagieren kann, kann man Handler registrieren. Hier als Beispiel ein Click-Handler auf allen `<h2>` Elementen um bei einem Click einen Alert-Dialog anzuzeigen:
+{% highlight javascript %}
+$('h2').click(function(e) {
+    var text = $(this).text();
+    alert(text);
+    e.preventDefault();
+});
+{% endhighlight %}
+Einfach mal eine `<h2>` Überschrift anklicken der Handler ist auf dieser Seite schon registriert :wink:.
+
+Hier kann man mehrere Dinge sehen:
+
+1. Innerhalb der Handler-Funktion ist `this` das angeklickte Element. `this` ist dabei das DOM Element. Wenn man mit `this` wieder etwas jQuery 'Magie' machen möchte muss man es nochmal in die `$` Funktion einwickeln (so zu sagen).
+2. Jeder Event-Handler bekommt das Event-Objekt übergeben. Hier kann man dann z.B. die weiter Ausbreitung des Events verhindern (vergleiche: `e.preventDefault()`).
+
+## und weiter?
+
+Ab hier kann man schon mal auf die excellente jQuery Dokuementation verwesen. Dort werdet ihr sicher (noch) schlauer.
+
+Ich denke hier werden dann demnächst noch weitere Tipps & Tricks in Sachen jQuery auftauchen.
