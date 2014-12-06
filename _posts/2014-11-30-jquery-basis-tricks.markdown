@@ -37,4 +37,35 @@ $('#test').data('testEins', 'eins');
 $('#test').data('testZwei', 'zwei');
 {% endhighlight %}
 
-Wirklich sehr sehr praktisch. Wird man dann später feststellen :grin:.
+Wirklich sehr sehr praktisch. Das wird man dann später im Einsatz wirklich zu schätzen wissen.
+
+## Utilities
+
+### each()
+
+`each` gibt es in jQuery (leider) zwei mal. Das führt öfter zu Verwirrungen und Debug-Sessions.
+
+Ein mal gibt es ein `each` um Arrays oder Objekte zu iterieren. Das ist natürlich "nur" eine kleine Hilfe bei der JavaScript Programmierung:
+{% highlight javascript %}
+// Array
+$.each(['foo', 'bar', 'foobar'], function(idx, val) {
+    console.log(idx + ' = ' + val);
+}); // => ['foo', 'bar', 'foobar']
+// Object
+$.each({foo: 'bar', bla:'laber'}, function(k, v) {
+    console.log(k + ' => ' + v);
+}); // => {foo: 'bar', bla:'laber'}
+{% endhighlight %}
+Um die Programmierung weiter zu vereinfachen gibt die Funktion das durchlaufene Array oder Objekt zurück so das man den nächsten Methodenaufruf gleich hinten dran ketten kann. Hier ist zu beachten das die Funktion `each` nur im Namensraum `$` definiert wurde. Es wird **nicht** eine Funktion `each` auf dem Array (oder Objekt) aufgerufen.
+
+Das zweite `each` ist ein Methode auf dem jQuery Objekt das man nach einer Selektion zurück bekommt. Hier im Beispiel werden alle `<h1>`, `<h2>` und `<h3>` Überschriften selektiert und dann deren Inhalte ausgegeben:
+{% highlight javascript %}
+var arr = [];
+$('h1').add($('h2')).add($('h3')).each(function(idx, elem) {
+    arr.push($(elem).text());
+});
+console.log(arr.join(','));
+{% endhighlight %}
+Natürlich ist diese Funktion ebenso nützlich. Aber man beachte das es sich natürlich um ein anderes `each` handelt.
+
+Das gefährliche ist das es zwei Funktionen gibt die gleich heißen und fast das gleich tun. Im Hintergrund passiert natürlich jedes mal etwas anderes. Das kann man leicht mal verdrehen und wie gesagt führt das oft zu Fehlern. *You have been warned* :grin:
