@@ -69,3 +69,30 @@ console.log(arr.join(','));
 Natürlich ist diese Funktion ebenso nützlich. Aber man beachte das es sich natürlich um ein anderes `each` handelt.
 
 Das gefährliche ist das es zwei Funktionen gibt die gleich heißen und fast das gleich tun. Im Hintergrund passiert natürlich jedes mal etwas anderes. Das kann man leicht mal verdrehen und wie gesagt führt das oft zu Fehlern. *You have been warned* :grin:
+
+### extend()
+
+Ein wirklich sehr nützliche Funktion (wenn man später mal ein Plugin schreibt) ist die Funktion `$.extend()`. Generell betrachtet serden die Einträge des ersten Objekts mit den Einträgen aus den weiteren Objekten überschrieben. Das ist sehr nützlich wenn man bei einem Plugin einen Haufen Default-Parameter mit einigen übergebenen Parameter-Objekten überschreiben möchte.
+{% highlight javascript %}
+var obj1 = { eins: 'foo', zwei: 'bar' };
+var obj2 = { zwei: 'baz', drei: 'foobar'};
+var obj3 = { bla: 'laber' };
+var result = $.extend(obj1, obj2, obj3);
+console.log(result); // {eins: "foo", zwei: "baz", drei: "foobar", bla: "laber"}
+console.log(obj1); // {eins: "foo", zwei: "baz", drei: "foobar", bla: "laber"}
+console.log(obj2); // {zwei: "baz", drei: "foobar"}
+console.log(obj3); // {bla: "laber"}
+{% endhighlight %}
+Wie man sieht wird das erste Objekt mit den anderen Objekten überschrieben und dann zurück gegeben.
+
+Wenn man das erste Objekt nicht ändern möchte kann man als ersten Parameter ein leeres Objekt angeben:
+{% highlight javascript %}
+var obj1 = { eins: 'foo', zwei: 'bar' };
+var obj2 = { zwei: 'baz', drei: 'foobar'};
+var obj3 = { bla: 'laber' };
+var result = $.extend({}, obj1, obj2, obj3);
+console.log(result); // {eins: "foo", zwei: "baz", drei: "foobar", bla: "laber"}
+console.log(obj1); // {eins: "foo", zwei: "bar"}
+console.log(obj2); // {zwei: "baz", drei: "foobar"}
+console.log(obj3); // {bla: "laber"}
+{% endhighlight %}
