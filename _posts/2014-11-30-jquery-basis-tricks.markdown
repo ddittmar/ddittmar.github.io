@@ -83,9 +83,7 @@ console.log(obj1); // {eins: "foo", zwei: "baz", drei: "foobar", bla: "laber"}
 console.log(obj2); // {zwei: "baz", drei: "foobar"}
 console.log(obj3); // {bla: "laber"}
 {% endhighlight %}
-Wie man sieht wird das erste Objekt mit den anderen Objekten überschrieben und dann zurück gegeben.
-
-Wenn man das erste Objekt nicht ändern möchte kann man als ersten Parameter ein leeres Objekt angeben:
+Wie man sieht wird das erste Objekt mit den anderen Objekten überschrieben und dann zurück gegeben. Wenn man das erste Objekt nicht ändern möchte kann man als ersten Parameter ein leeres Objekt angeben:
 {% highlight javascript %}
 var obj1 = { eins: 'foo', zwei: 'bar' };
 var obj2 = { zwei: 'baz', drei: 'foobar'};
@@ -96,3 +94,7 @@ console.log(obj1); // {eins: "foo", zwei: "bar"}
 console.log(obj2); // {zwei: "baz", drei: "foobar"}
 console.log(obj3); // {bla: "laber"}
 {% endhighlight %}
+
+## und jetzt?
+
+Ja, jetzt ist hier erstmal Schluss. Im nächsten Post werden wir und dann mal ansehen wie man ein einfaches Plugin schreibt. Dabei werden wir und dann auch gleich noch ein paar Tricks angucken mit denen man die Performance steigern kann. Das ist gerade bei Plugins die viel Zeug machen manchmal schon angebracht.
