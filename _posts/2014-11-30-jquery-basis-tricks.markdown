@@ -72,7 +72,7 @@ Das gefährliche ist das es zwei Funktionen gibt die gleich heißen und fast das
 
 ### extend()
 
-Ein wirklich sehr nützliche Funktion (wenn man später mal ein Plugin schreibt) ist die Funktion `$.extend()`. Generell betrachtet serden die Einträge des ersten Objekts mit den Einträgen aus den weiteren Objekten überschrieben. Das ist sehr nützlich wenn man bei einem Plugin einen Haufen Default-Parameter mit einigen übergebenen Parameter-Objekten überschreiben möchte.
+Ein wirklich sehr nützliche Funktion (wenn man später mal ein Plugin schreibt) ist die Funktion `$.extend()`. Generell betrachtet werden die Einträge des ersten Objekts mit den Einträgen aus den weiteren Objekten überschrieben. Das ist sehr nützlich wenn man bei einem Plugin einen Haufen Default-Parameter mit einigen übergebenen Parameter-Objekten überschreiben möchte.
 {% highlight javascript %}
 var obj1 = { eins: 'foo', zwei: 'bar' };
 var obj2 = { zwei: 'baz', drei: 'foobar'};
