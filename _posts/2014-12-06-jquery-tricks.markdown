@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "jQuery Tricks"
-date:   2014-11-30
+date:   2014-12-06
 categories: javascript jquery
-tags: jquery basics
+tags: jquery tricks
 og_img: http://static-ddittmar.appspot.com/images/blog/jQuery-Logo.png
 og_img-alt: jQuery Logo
 og_img-width: 400
