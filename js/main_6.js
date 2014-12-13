@@ -67,8 +67,8 @@ function buildFlickrPicUrl(pic, size) {
 
 function drawPictures(pictures) {
     var chunks = chunk(pictures, 6);
-	var $gallery = $('#gallery').empty();
-	_.each(chunks, function (chunk) {
+    var frag = document.createDocumentFragment();
+    _.each(chunks, function (chunk) {
         var $row = $('<div>').addClass('row');
         _.each(chunk, function (pic, idx) {
             var url_thumb = buildFlickrPicUrl(pic, 'q');
@@ -96,8 +96,10 @@ function drawPictures(pictures) {
             $col.append($a);
             $row.append($col);
         });
-        $gallery.append($row);
-	});
+        frag.appendChild($row[0]);
+    });
+    var $gallery = $('#gallery').empty();
+    $gallery[0].appendChild(frag);
 }
 
 function drawGallery(data) {
@@ -113,7 +115,7 @@ function prevGalleryPage() {
 
 function nextGalleryPage() {
     var page = $('#pager').data('page') + 1;
-    ga('send', 'event', 'page', 'click', 'next', page); 
+    ga('send', 'event', 'page', 'click', 'next', page);
     galleryFunction(page);
 }
 
@@ -145,17 +147,18 @@ function drawAlbumWithPaging(data) {
 
 function drawPhotosets(data) {
     checkFlickrError(data);
-    var $albums = $('ul#albums');
+    var frag = document.createDocumentFragment();
     _.each(data.photosets.photoset, function(photoset) {
         var $a = $('<a>')
             .addClass('loadAlbumGallery')
-            .attr('title', photoset.title._content) 
+            .attr('title', photoset.title._content)
             .attr('href', '#' + encodeURIComponent(photoset.title._content))
             .data('photoset_id', photoset.id)
             .text(photoset.title._content);
         var $li = $('<li>').append($a);
-        $albums.append($li);
+        frag.appendChild($li[0]);
     });
+    $('ul#albums')[0].appendChild(frag);
 }
 
 function onLoadGallery() {
@@ -239,7 +242,7 @@ $(document).on('click', 'a#nextGalleryPage', function(e) {
 });
 
 $(document).on('click', 'a.galleryImage', function(e) {
-    ga('send', 'event', 'galleryImage', 'click', ('' + $(this).attr('id'))); 
+    ga('send', 'event', 'galleryImage', 'click', ('' + $(this).attr('id')));
 });
 
 $(document).on('click', '.social > a', function(e) {
