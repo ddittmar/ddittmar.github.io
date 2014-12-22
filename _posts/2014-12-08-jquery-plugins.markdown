@@ -9,7 +9,11 @@ og_img-alt: jQuery Logo
 og_img-width: 400
 og_img-height: 102
 show_head_img: true
-onDocumentReady: $.getScript('/js/blog/jquery.blink.js', function() { $('.blink').blink(); });
+onDocumentReady: > ###
+    $.getScript('/js/blog/jquery.blink.js', function() {
+        $('#blink1').blink();
+        $('#blink2').blink({durationIn: 800, durationOut: 100});
+    });
 ---
 Nachdem wir uns jetzt die grundsätzlichen Dinge angesehen haben kann man jetzt mal ein Plugin angehen. Natürlich sollte man nebenbei die wirklich [exzellente Dokumentation](http://api.jquery.com/) offen haben. Man braucht auch oft ein paar "einfache" Tricks wie diese:
 
@@ -24,7 +28,7 @@ Auf der Seite gibt es außerdem ein sehr gutes [Tutorial](http://learn.jquery.co
 
 Es ist etwas schwierig ein Plugin zu schreiben das nicht zu schwierig ist aber trotzdem alles zeigt was man so braucht. Ich habe mich entschlossen ein einfaches Plugin zu schreiben mit dem man so etwas erzeugen kann wie das früher mit dem Blink-Tag (`<blink>`) ging. Das Tag wird nicht mehr von allen Browsern unterstütz und kann jetzt (in modernen Browsern) auch mit CSS3 erzeugt werden. Hier der Effekt der durch unser Mini-Plugin erzeugt wird:
 
-<p class="blink">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+<p id="blink1" class="blink">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 
 Es ist natürlich selten sinnvoll ein Plugin selber zu schreiben. Bevor man so etwas selber macht sollte man gucken ob man nicht ein geeignetes Plugin in der [jquery Plugin Registry](http://plugins.jquery.com/) findet. Selbst wenn man nicht genau das gewünschte Plugin findet, ist es oft einfacher ein Plugin umzubauen als selber alles von Null zu erfinden.
 
@@ -39,8 +43,8 @@ Sehen wir uns kurz das an was jedes jQuery-Plugin braucht. Der Rahmen des Plugin
     $.fn.blink = function() {
         // do magic here...
         return this;
-    }
-})(jQuery);
+    };
+}(jQuery));
 {% endhighlight %}
 
 In der ersten und der letzen Zeile wird eine `function` definiert und auch direkt aufgerufen. Es handelt sich hier um einen einfachen Trick, der es dem Author des Plugins erlaubt im Plugin auf jQuery normal mit dem `$` zuzugreifen auch wenn der Rest der Anwendung `$` für etwas anderes Verwendet (siehe [jQuery.noConflict()](http://api.jquery.com/jquery.noconflict/)). Das vereinfacht die Entwicklung des Plugins enorm.
@@ -82,8 +86,90 @@ machen wir uns jetzt erstmal dran eine Basis-Version zu erstellen. Eine Art blin
             fade();
         });
         return this;
-    }
-})(jQuery);
+    };
+}(jQuery));
 {% endhighlight %}
 
 Hier sieht man auch gleich noch eine andere Besonderheit, die aber logisch erscheint wenn man sich das genau überlegt. `this` ist innerhalb des Plugins eine Sammlung der Elemente die mit jQuery selektiert wurden. Das muss so sein da man mit jQuery mit z.B. `$('.blink')` alle Elemente mit der entsprechenden Klasse wählt und dann auf alle Elemente das Plugin anwendet. Deshalb geht das Plugin alle Elemente mit `each` durch und wendet überall die Animation an.
+
+## Make it right
+
+Man schreibt ein Plugin natürlich nur um ein Stück Code möglichst wiederverwendbar zur Verfügung zu stellen. Wenn man sich die Version die wir jetzt haben so ansieht fällt natürlich gleich auf das unser Plugin wenig wiederverwendbar ist:
+
+* Man kann nicht einstellen wie lange das Einblenden läuft.
+* Man kann nicht einstellen wie lange das Ausblenden läuft.
+* Man kann den Übergangs-Effekt nicht einstellen.
+* Das Plugin kann nicht gestoppt werden.
+* usw... usw...
+
+Kümmern wir uns erstmal darum das man dem Plugin ein paar Einstellungen übergeben kann.
+
+### Einstellungen
+
+Einstellungen in ein Plugin zu übergeben ist relativ einfach. Aber bevor wir damit beginnen zeihen wir die Einstellungsparameter die wir jetzt schon haben in ein Objekt innerhalb des Plugins:
+
+{% highlight javascript %}
+(function ($) {
+    $.fn.blink = function() {
+        
+        var settings = {
+            durationIn: 400,
+            durationOut: 400,
+            easingIn: 'swing',
+            easingOut: 'swing'
+        };
+        
+        this.each(function() {
+            var $this = $(this);
+            var fade = function() {
+                $this
+                    .animate({ opacity: 0.0 }, settings.durationOut, settings.easingOut)
+                    .animate({ opacity: 1.0 }, settings.durationIn, settings.easingIn, fade);
+            };
+            fade();
+        });
+        return this;
+    };
+}(jQuery));
+{% endhighlight %}
+
+Jetzt müssen wir nur ein Einstellungsobjekt in das Plugin übergeben und unser Settings-Objekt erweitern ([jQuery.extend()](http://api.jquery.com/jquery.extend/)). Dann sieht das Plugin so aus:
+
+{% highlight javascript %}
+(function ($) {
+    $.fn.blink = function(settings) {
+        
+        var settings = settings || {};
+        
+        var defaultSettings = {
+            durationIn: 400,
+            durationOut: 400,
+            easingIn: 'swing',
+            easingOut: 'swing'
+        };
+        
+        settings = $.extend(defaultSettings, settings);
+        
+        this.each(function() {
+            var $this = $(this);
+            var fade = function() {
+                $this
+                    .animate({ opacity: 0.0 }, settings.durationIn, settings.easingIn)
+                    .animate({ opacity: 1.0 }, settings.durationOut, settings.easingOut, fade);
+            };
+            fade();
+        });
+        return this;
+    };
+}(jQuery));
+{% endhighlight %}
+
+Und um dann mal anders blinken zu lassen:
+
+{% highlight javascript %}
+$('#blink2').blink({durationIn: 800, durationOut: 100});
+{% endhighlight %}
+
+Was dann so aussieht:
+
+<p id="blink2" class="blink">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
