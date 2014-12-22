@@ -6,8 +6,7 @@ sitemap: false
 onDocumentReady: > ## 
     var elem = $('.rot13');
     var txt = elem.text();
-    var rot = rot13(txt);
-    elem.text(rot);
+    elem.text(txt.rot13());
 ---
 
 <header class="page-header">
