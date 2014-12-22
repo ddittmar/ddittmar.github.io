@@ -18,8 +18,8 @@
             var $this = $(this);
             var fade = function() {
                 $this
-                    .animate({ opacity: 0.0 }, settings.durationIn, settings.easingIn)
-                    .animate({ opacity: 1.0 }, settings.durationOut, settings.easingOut, fade);
+                    .animate({ opacity: 0.0 }, settings.durationOut, settings.easingOut)
+                    .animate({ opacity: 1.0 }, settings.durationIn, settings.easingIn, fade);
             };
             fade();
         });

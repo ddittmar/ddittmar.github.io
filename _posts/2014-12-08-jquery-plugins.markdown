@@ -12,7 +12,7 @@ show_head_img: true
 onDocumentReady: > ###
     $.getScript('/js/blog/jquery.blink.js', function() {
         $('#blink1').blink();
-        $('#blink2').blink({durationIn: 800, durationOut: 100});
+        $('#blink2').blink({durationOut: 800, durationIn: 100});
     });
 ---
 Nachdem wir uns jetzt die grundsätzlichen Dinge angesehen haben kann man jetzt mal ein Plugin angehen. Natürlich sollte man nebenbei die wirklich [exzellente Dokumentation](http://api.jquery.com/) offen haben. Man braucht auch oft ein paar "einfache" Tricks wie diese:
@@ -123,8 +123,8 @@ Einstellungen in ein Plugin zu übergeben ist relativ einfach. Aber bevor wir da
             var $this = $(this);
             var fade = function() {
                 $this
-                    .animate({ opacity: 0.0 }, settings.durationOut, settings.easingOut)
-                    .animate({ opacity: 1.0 }, settings.durationIn, settings.easingIn, fade);
+                    .animate({ opacity: 0.0 }, settings.durationIn, settings.easingIn)
+                    .animate({ opacity: 1.0 }, settings.durationOut, settings.easingOut, fade);
             };
             fade();
         });
@@ -154,8 +154,8 @@ Jetzt müssen wir nur ein Einstellungsobjekt in das Plugin übergeben und unser 
             var $this = $(this);
             var fade = function() {
                 $this
-                    .animate({ opacity: 0.0 }, settings.durationIn, settings.easingIn)
-                    .animate({ opacity: 1.0 }, settings.durationOut, settings.easingOut, fade);
+                    .animate({ opacity: 0.0 }, settings.durationOut, settings.easingOut)
+                    .animate({ opacity: 1.0 }, settings.durationIn, settings.easingIn, fade);
             };
             fade();
         });
@@ -167,7 +167,7 @@ Jetzt müssen wir nur ein Einstellungsobjekt in das Plugin übergeben und unser 
 Und um dann mal anders blinken zu lassen:
 
 {% highlight javascript %}
-$('#blink2').blink({durationIn: 800, durationOut: 100});
+$('#blink2').blink({durationOut: 800, durationIn: 100});
 {% endhighlight %}
 
 Was dann so aussieht:
