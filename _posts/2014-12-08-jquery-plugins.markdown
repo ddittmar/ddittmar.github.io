@@ -9,10 +9,7 @@ og_img-alt: jQuery Logo
 og_img-width: 400
 og_img-height: 102
 show_head_img: true
-onDocumentReady: > ###
-    $.getScript('/js/blog/jquery.blink.js', function() {
-        $('.blink').blink();
-    });
+onDocumentReady: $.getScript('/js/blog/jquery.blink.js', function() { $('.blink').blink(); });
 ---
 Nachdem wir uns jetzt die grundsätzlichen Dinge angesehen haben kann man jetzt mal ein Plugin angehen. Natürlich sollte man nebenbei die wirklich [exzellente Dokumentation](http://api.jquery.com/) offen haben. Man braucht auch oft ein paar "einfache" Tricks wie diese:
 
@@ -31,4 +28,62 @@ Es ist etwas schwierig ein Plugin zu schreiben das nicht zu schwierig ist aber t
 
 Es ist natürlich selten sinnvoll ein Plugin selber zu schreiben. Bevor man so etwas selber macht sollte man gucken ob man nicht ein geeignetes Plugin in der [jquery Plugin Registry](http://plugins.jquery.com/) findet. Selbst wenn man nicht genau das gewünschte Plugin findet, ist es oft einfacher ein Plugin umzubauen als selber alles von Null zu erfinden.
 
+Das Plugin wie ich es für diesen Post entwickelt habe findet ihr [hier](/js/blog/jquery.blink.js). **Bitte nicht erschrecken!** Das Plugin zeigt natürlich den Entzustand den wir hier am Ende des Post erreichen. Wir werden im folgenden das Plugin ganz lansam Schritt für Schritt aufbauen.
+
 ## Plugin 101
+
+Sehen wir uns kurz das an was jedes jQuery-Plugin braucht. Der Rahmen des Plugins ist einfach, ließt sich aber etwas kryptisch:
+
+{% highlight javascript %}
+(function ($) {
+    $.fn.blink = function() {
+        // do magic here...
+        return this;
+    }
+})(jQuery);
+{% endhighlight %}
+
+In der ersten und der letzen Zeile wird eine `function` definiert und auch direkt aufgerufen. Es handelt sich hier um einen einfachen Trick, der es dem Author des Plugins erlaubt im Plugin auf jQuery normal mit dem `$` zuzugreifen auch wenn der Rest der Anwendung `$` für etwas anderes Verwendet (siehe [jQuery.noConflict()](http://api.jquery.com/jquery.noconflict/)). Das vereinfacht die Entwicklung des Plugins enorm.
+
+Innerhalb der `function($)` wird dann eine neue Funktion an dem jQuery `fn` Objekt registriert. In unserem Fall heißt die Funktion `blink`, da wir mit diesem Namen unser Plugin auf die gewählten Elemente anwenden wollen. Der blinkede Text oben wird z.B. so zum blinken gebracht:
+
+{% highlight javascript %}
+$('.blink').blink();
+{% endhighlight %}
+
+Die unter dem Namen regestrierte Funktion wird dann beim Anwenden des Plugins ausgeführt. In der Funktion kann man dann ganz normal machen was man will. Es ist aber enorm **WICHTIG** das ihr am Ende der Funktion `this` zurück gebt. Wenn das nicht passiert ist es nicht möglich nach dem Anwenden des Plugins noch weiter jQuery Funktionen zu verketten. Das hier wäre dann z.B. nicht möglich:
+
+{% highlight javascript %}
+$('.blink').blink().click(function(e) {
+    // hier toller Click-Handler...
+});
+{% endhighlight %}
+
+Anders als sonst bei jQuery (z.B. im Click-Handler) ist innerhalb des Plugins das `this` bereits ein jQuery 'Dingens'. Man sollte also `this` **nicht** erneut in ein jQuery 'Dingens' wandeln (`$(this)`). Das funktioniert zwar ist aber unnötiger overhead.  
+
+## Make it work
+
+Getreu dem Motto
+
+> Make It Work. Make It Right. Make It Fast.
+
+machen wir uns jetzt erstmal dran eine Basis-Version zu erstellen. Eine Art blinken zu erzeugen ist im Prinzip nichts anderes als das Element durchsichtig zu machen und es anschließend wieder sichtbar zu machen. Das ist eine relative einfache Animation, die mit jQuery leicht erzeugt ist. Die Basisversion sieht dann so aus:
+
+{% highlight javascript %}
+(function ($) {
+    $.fn.blink = function() {
+        this.each(function() {
+            var $this = $(this);
+            var fade = function() {
+                $this
+                    .animate({ opacity: 0.0 }, 400)
+                    .animate({ opacity: 1.0 }, 400, fade);
+            };
+            fade();
+        });
+        return this;
+    }
+})(jQuery);
+{% endhighlight %}
+
+Hier sieht man auch gleich noch eine andere Besonderheit, die aber logisch erscheint wenn man sich das genau überlegt. `this` ist innerhalb des Plugins eine Sammlung der Elemente die mit jQuery selektiert wurden. Das muss so sein da man mit jQuery mit z.B. `$('.blink')` alle Elemente mit der entsprechenden Klasse wählt und dann auf alle Elemente das Plugin anwendet. Deshalb geht das Plugin alle Elemente mit `each` durch und wendet überall die Animation an.
