@@ -1,7 +1,9 @@
+/*jslint vars: true */
+/*global jQuery */
 (function ($) {
     'use strict';
     
-    $.fn.blink = function(options) {
+    $.fn.blink = function (options) {
         
         var settings = options || {};
         
@@ -14,9 +16,9 @@
         
         settings = $.extend(defaultSettings, settings);
         
-        this.each(function() {
+        this.each(function () {
             var $this = $(this);
-            var fade = function() {
+            var fade = function () {
                 $this
                     .animate({ opacity: 0.0 }, settings.durationOut, settings.easingOut)
                     .animate({ opacity: 1.0 }, settings.durationIn, settings.easingIn, fade);
