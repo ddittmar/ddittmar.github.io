@@ -106,7 +106,7 @@ Kümmern wir uns erstmal darum das man dem Plugin ein paar Einstellungen überge
 
 ### Einstellungen
 
-Einstellungen in ein Plugin zu übergeben ist relativ einfach. Aber bevor wir damit beginnen zeihen wir die Einstellungsparameter die wir jetzt schon haben in ein Objekt innerhalb des Plugins:
+Einstellungen in ein Plugin zu übergeben ist relativ einfach. Aber bevor wir damit beginnen ziehen wir die Einstellungsparameter die wir jetzt schon haben in ein Objekt innerhalb des Plugins:
 
 {% highlight javascript %}
 (function ($) {
@@ -164,7 +164,7 @@ Jetzt müssen wir nur ein Einstellungsobjekt in das Plugin übergeben und unser 
 }(jQuery));
 {% endhighlight %}
 
-Und um dann mal anders blinken zu lassen:
+Und um es dann mal anders blinken zu lassen:
 
 {% highlight javascript %}
 $('#blink2').blink({durationOut: 800, durationIn: 100});
