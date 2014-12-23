@@ -99,7 +99,7 @@ Man schreibt ein Plugin natürlich nur um ein Stück Code möglichst wiederverwe
 * Man kann nicht einstellen wie lange das Einblenden läuft.
 * Man kann nicht einstellen wie lange das Ausblenden läuft.
 * Man kann den Übergangs-Effekt nicht einstellen.
-* Das Plugin kann nicht gestoppt werden.
+* Das Plugin kann nicht gestoppt/gestartet werden.
 * usw... usw...
 
 Kümmern wir uns erstmal darum das man dem Plugin ein paar Einstellungen übergeben kann.
@@ -136,10 +136,10 @@ Einstellungen in ein Plugin zu übergeben ist relativ einfach. Aber bevor wir da
 Jetzt müssen wir nur ein Einstellungsobjekt in das Plugin übergeben und unser Settings-Objekt erweitern ([jQuery.extend()](http://api.jquery.com/jquery.extend/)). Dann sieht das Plugin so aus:
 
 {% highlight javascript %}
-(function ($) {
-    $.fn.blink = function(settings) {
+(function ($) {    
+    $.fn.blink = function (options) {
         
-        var settings = settings || {};
+        var settings = options || {};
         
         var defaultSettings = {
             durationIn: 400,
@@ -150,9 +150,9 @@ Jetzt müssen wir nur ein Einstellungsobjekt in das Plugin übergeben und unser 
         
         settings = $.extend(defaultSettings, settings);
         
-        this.each(function() {
+        this.each(function () {
             var $this = $(this);
-            var fade = function() {
+            var fade = function () {
                 $this
                     .animate({ opacity: 0.0 }, settings.durationOut, settings.easingOut)
                     .animate({ opacity: 1.0 }, settings.durationIn, settings.easingIn, fade);
@@ -173,3 +173,15 @@ $('#blink2').blink({durationOut: 800, durationIn: 100});
 Was dann so aussieht:
 
 <p id="blink2" class="blink">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+
+### starten/stoppen
+
+Das man Methoden auf einem Plugin aufrufen kann ist durchaus üblich. Meistens sieht man so etwas bei Dialogen und ähnlichem.
+
+Wenn wir unser Mini-Plugin so umschreiben wollen das wir es beliebig starten und stoppen können, ist ein größerer Umbau notwendig. Deshalb verschiebe ich das auf den nächsten Post zu diesem Thema.
+
+## Make it fast
+
+Da wir hier keine größeren Manipulationen am DOM vornehmen und auch sonst nicht viel machen müssen wir hier nichts optimieren. Wenn jemandem etwas auffällt kann er sich ja melden :wink:. Das einzige das mir so spontan einfällt: Man könnte die Animation durch CSS machen. Das Plugin müsste dann feststellen ob der Browser das kann und ggf. die passenden CSS Regeln einfügen. Der Code den wir jetzt haben wäre dann der Fallback falls jemand mit einem alten Browser kommt. Aber das ist sicher auch ein Thema für den nächsten Post.
+
+Ich hoffe das war soweit verstandlich :grin:. Bis zum nächsten Artikel :punch:
