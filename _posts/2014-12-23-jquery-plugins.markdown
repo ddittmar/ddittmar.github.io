@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "jQuery Plugins"
-date:   2014-12-08
+date:   2014-12-23
 categories: javascript jquery
 tags: jquery plugin
 og_img: http://static-ddittmar.appspot.com/images/blog/jQuery-Logo.png
