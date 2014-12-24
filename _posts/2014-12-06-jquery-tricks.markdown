@@ -12,6 +12,11 @@ show_head_img: true
 ---
 Bevor man mit JQuery dazu kommt Plugins zu schreiben sollte man noch einige Tricks in sein Arsenal aufnehmen. So ein paar extra Tricks helfen ungemein bei der Entwicklung eines Plugins und steigern zudem die lesbarkeit und die Performance.
 
+Das hier ist der zweite Artikel in einer kleinen jQuery-Serie. Hier weitere Artikel:
+
+* [jQuery 101 (Grundlagenwissen)]({% post_url 2014-11-23-jquery-101 %})
+* [jQuery Plugins]({% post_url 2014-12-23-jquery-plugins %})
+
 ## Data
 
 Man muss recht häufig ein paar Daten im DOM hinterlegen damit man später anhand der Daten etwas machen kann oder das Element wiedererkennt oder erkennt das hier das Plugin schon angewendet wurde (oder oder oder...). Zum Glück hat jQuery da was sehr praktisches um mit den [Data-Attributen](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_data_attributes) zu hantieren auch wenn der Browser HTML5 gar nicht unterstützt.
@@ -97,4 +102,4 @@ console.log(obj3); // {bla: "laber"}
 
 ## und jetzt?
 
-Ja, jetzt ist hier erstmal Schluss. Im nächsten Post werden wir und dann mal ansehen wie man ein einfaches Plugin schreibt. Dabei werden wir und dann auch gleich noch ein paar Tricks angucken mit denen man die Performance steigern kann. Das ist gerade bei Plugins die viel Zeug machen manchmal schon angebracht.
+Ja, jetzt ist hier erstmal Schluss. Im nächsten [Artikel]({% post_url 2014-12-23-jquery-plugins %}) werden wir und dann mal ansehen wie man ein einfaches Plugin schreibt. Dabei werden wir und dann auch gleich noch ein paar Tricks angucken mit denen man die Performance steigern kann. Das ist gerade bei Plugins die viel Zeug machen manchmal schon angebracht.

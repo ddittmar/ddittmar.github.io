@@ -2,7 +2,7 @@
 layout: post
 title:  "jQuery 101"
 subtitle: "Grundlagenwissen"
-date:   2014-11-04
+date:   2014-11-23
 categories: javascript jquery
 tags: jquery basics
 og_img: http://static-ddittmar.appspot.com/images/blog/jQuery-Logo.png
@@ -18,6 +18,11 @@ onDocumentReady: > ###
     });
 ---
 Ich musste gerade wieder feststellen das einige Entwickler noch nicht oder sehr wenig mit jQuery in Berührung gekommen sind. Deshalb hier ein kleine Zusammenfassung um die Grundlagen zu klären. Später vielleicht noch ein paar weiterführende Artikel um fortgeschrittene Themen wie Plugins und ähnliches zu zeigen.
+
+Das hier ist der erste Artikel in einer kleinen jQuery-Serie. Hier weitere Artikel:
+
+* [jQuery Tricks]({% post_url 2014-12-06-jquery-tricks %})
+* [jQuery Plugins]({% post_url 2014-12-23-jquery-plugins %})
 
 ## jQuery?
 
@@ -140,4 +145,4 @@ Hier kann man mehrere Dinge sehen:
 
 Ab hier kann man schon mal auf die excellente jQuery Dokumentation verwesen. Dort werdet ihr sicher (noch) schlauer.
 
-Ich denke hier werden dann demnächst noch weitere Tipps & Tricks in Sachen jQuery auftauchen.
+Hier noch weitere Tipps & [Tricks]({% post_url 2014-12-06-jquery-tricks %}) in Sachen jQuery.

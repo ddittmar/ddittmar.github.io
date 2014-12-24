@@ -15,7 +15,7 @@ onDocumentReady: > ###
         $('#blink2').blink({durationOut: 800, durationIn: 100});
     });
 ---
-Nachdem wir uns jetzt die grundsätzlichen Dinge angesehen haben kann man jetzt mal ein Plugin angehen. Natürlich sollte man nebenbei die wirklich [exzellente Dokumentation](http://api.jquery.com/) offen haben. Man braucht auch oft ein paar "einfache" Tricks wie diese:
+Nachdem wir uns jetzt die grundsätzlichen Dinge (siehe [101]({% post_url 2014-11-23-jquery-101 %}) und [Tricks]({% post_url 2014-12-06-jquery-tricks %})) angesehen haben kann man jetzt mal ein Plugin angehen. Natürlich sollte man nebenbei die wirklich [exzellente Dokumentation](http://api.jquery.com/) offen haben. Man braucht auch oft ein paar "einfache" Tricks wie diese:
 
 - [AJAX](http://api.jquery.com/category/ajax/)
 - manipulation von [Attribute](http://api.jquery.com/category/attributes/)n
@@ -23,6 +23,11 @@ Nachdem wir uns jetzt die grundsätzlichen Dinge angesehen haben kann man jetzt 
 - Navigation innerhalb des DOMs ([traversierung](http://api.jquery.com/category/traversing/))
 
 Auf der Seite gibt es außerdem ein sehr gutes [Tutorial](http://learn.jquery.com/) das auch ein Javascript mit einschließt.
+
+Das hier ist der dritte Artikel in einer kleinen jQuery-Serie. Hier weitere Artikel:
+
+* [jQuery 101 (Grundlagenwissen)]({% post_url 2014-11-23-jquery-101 %})
+* [jQuery Tricks]({% post_url 2014-12-06-jquery-tricks %})
 
 ## Das Ziel
 
@@ -32,7 +37,7 @@ Es ist etwas schwierig ein Plugin zu schreiben das nicht zu schwierig ist aber t
 
 Es ist natürlich selten sinnvoll ein Plugin selber zu schreiben. Bevor man so etwas selber macht sollte man gucken ob man nicht ein geeignetes Plugin in der [jquery Plugin Registry](http://plugins.jquery.com/) findet. Selbst wenn man nicht genau das gewünschte Plugin findet, ist es oft einfacher ein Plugin umzubauen als selber alles von Null zu erfinden.
 
-Das Plugin wie ich es für diesen Post entwickelt habe findet ihr [hier](/js/blog/jquery.blink.js). **Bitte nicht erschrecken!** Das Plugin zeigt natürlich den Entzustand den wir hier am Ende des Post erreichen. Wir werden im folgenden das Plugin ganz lansam Schritt für Schritt aufbauen.
+Das Plugin wie ich es für diesen Post entwickelt habe findet ihr [hier](/js/blog/jquery.blink.js). **Bitte nicht erschrecken!** :wink: Das Plugin zeigt natürlich den Entzustand den wir hier am Ende des Post erreichen. Wir werden im folgenden das Plugin ganz lansam Schritt für Schritt aufbauen.
 
 ## Plugin 101
 
@@ -184,4 +189,4 @@ Wenn wir unser Mini-Plugin so umschreiben wollen das wir es beliebig starten und
 
 Da wir hier keine größeren Manipulationen am DOM vornehmen und auch sonst nicht viel machen müssen wir hier nichts optimieren. Wenn jemandem etwas auffällt kann er sich ja melden :wink:. Das einzige das mir so spontan einfällt: Man könnte die Animation durch CSS machen. Das Plugin müsste dann feststellen ob der Browser das kann und ggf. die passenden CSS Regeln einfügen. Der Code den wir jetzt haben wäre dann der Fallback falls jemand mit einem alten Browser kommt. Aber das ist sicher auch ein Thema für den nächsten Post.
 
-Ich hoffe das war soweit verstandlich :grin:. Bis zum nächsten Artikel :punch:
+Ich hoffe das war soweit verständlich :grin:. Bis zum nächsten Artikel :punch:
