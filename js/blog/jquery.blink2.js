@@ -29,12 +29,27 @@
         
         this.each(function () {
             var $this = $(this);
-            var fade = function () {
-                $this
-                    .animate({ opacity: 0.0 }, settings.durationOut, settings.easingOut)
-                    .animate({ opacity: 1.0 }, settings.durationIn, settings.easingIn, fade);
-            };
-            fade();
+            
+            var oldCmd = $this.data('blink-command');
+            $this.data('blink-command', command);
+            
+            var blinkFn = $this.data('blink-function');
+            if (!blinkFn) {
+                // die Funktion gibt es noch nicht an diesem Element
+                blinkFn = function () {
+                    var command = $this.data('blink-command');
+                    if (command === 'start') {
+                        $this
+                            .animate({ opacity: 0.0 }, settings.durationOut, settings.easingOut)
+                            .animate({ opacity: 1.0 }, settings.durationIn, settings.easingIn, blinkFn);
+                    }
+                };
+                $this.data('blink-function', blinkFn);
+                blinkFn();
+            } else if (!!blinkFn && oldCmd === 'stop' && command === 'start') {
+                // die Funktion gibt es an diesem Element und es soll wieder gestartet werden
+                blinkFn();
+            }
         });
         
         return this;
