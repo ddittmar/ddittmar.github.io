@@ -5,17 +5,20 @@
     
     $.fn.blink2 = function (arg0, arg1) {
         
-        var command = "start";
+        var command = 'start';
         var settings = {};
+        var newSettings = false;
         
-        if (typeof arg0 === "object") {
+        if (typeof arg0 === 'object') {
             settings = arg0;
-        } else if (typeof arg0 === "string") {
+            newSettings = true;
+        } else if (typeof arg0 === 'string') {
             command = arg0;
         }
         
-        if (typeof arg0 === "string" && typeof arg1 === "object") {
+        if (typeof arg0 === 'string' && typeof arg1 === 'object') {
             settings = arg1;
+            newSettings = true;
         }
         
         var defaultSettings = {
@@ -27,29 +30,63 @@
         
         settings = $.extend(defaultSettings, settings);
         
+        function blink($elem, settings) {
+            
+            var $this = $elem;
+            var params = settings;
+            var command = 'stop';
+            
+            function animate() {
+                if (command === 'start') {
+                    $this
+                        .animate(
+                            { opacity: 0.0 },
+                            params.durationOut,
+                            params.easingOut
+                        )
+                        .animate(
+                            { opacity: 1.0 },
+                            params.durationIn,
+                            params.easingIn,
+                            animate // LOOP
+                        );
+                }
+            }
+            
+            function start() {
+                if (command === 'stop') {
+                    command = 'start';
+                    animate();
+                }
+            }
+            
+            function stop() {
+                command = 'stop';
+            }
+            
+            function newSettings(settings) {
+                params = settings;
+            }
+            
+            return {
+                start: start,
+                stop: stop,
+                newSettings: newSettings
+            };
+        }
+        
         this.each(function () {
             var $this = $(this);
-            
-            var oldCmd = $this.data('blink-command');
-            $this.data('blink-command', command);
-            
-            var blinkFn = $this.data('blink-function');
-            if (!blinkFn) {
-                // die Funktion gibt es noch nicht an diesem Element
-                blinkFn = function () {
-                    var command = $this.data('blink-command');
-                    if (command === 'start') {
-                        $this
-                            .animate({ opacity: 0.0 }, settings.durationOut, settings.easingOut)
-                            .animate({ opacity: 1.0 }, settings.durationIn, settings.easingIn, blinkFn);
-                    }
-                };
-                $this.data('blink-function', blinkFn);
-                blinkFn();
-            } else if (!!blinkFn && oldCmd === 'stop' && command === 'start') {
-                // die Funktion gibt es an diesem Element und es soll wieder gestartet werden
-                blinkFn();
+            var blinkPlugin = $this.data('blink');
+            if (!blinkPlugin) {
+                blinkPlugin = blink($this, settings);
+                $this.data('blink', blinkPlugin);
             }
+            
+            if (newSettings) {
+                blinkPlugin.newSettings(settings);
+            }
+            blinkPlugin[command]();
         });
         
         return this;
