@@ -23,6 +23,7 @@ Das hier ist der erste Artikel in einer kleinen jQuery-Serie. Hier weitere Artik
 
 * [jQuery Tricks]({% post_url 2014-12-06-jquery-tricks %})
 * [jQuery Plugins]({% post_url 2014-12-23-jquery-plugins %})
+* [jQuery Plugins II]({% post_url 2014-12-26-jquery-plugins2 %})
 
 ## jQuery?
 

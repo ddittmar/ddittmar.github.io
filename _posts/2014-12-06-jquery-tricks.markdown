@@ -16,6 +16,7 @@ Das hier ist der zweite Artikel in einer kleinen jQuery-Serie. Hier weitere Arti
 
 * [jQuery 101 (Grundlagenwissen)]({% post_url 2014-11-23-jquery-101 %})
 * [jQuery Plugins]({% post_url 2014-12-23-jquery-plugins %})
+* [jQuery Plugins II]({% post_url 2014-12-26-jquery-plugins2 %})
 
 ## Data
 

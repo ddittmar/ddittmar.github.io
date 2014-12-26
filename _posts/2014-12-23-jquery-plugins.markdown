@@ -28,6 +28,7 @@ Das hier ist der dritte Artikel in einer kleinen jQuery-Serie. Hier weitere Arti
 
 * [jQuery 101 (Grundlagenwissen)]({% post_url 2014-11-23-jquery-101 %})
 * [jQuery Tricks]({% post_url 2014-12-06-jquery-tricks %})
+* [jQuery Plugins II]({% post_url 2014-12-26-jquery-plugins2 %})
 
 ## Das Ziel
 
@@ -187,6 +188,6 @@ Wenn wir unser Mini-Plugin so umschreiben wollen das wir es beliebig starten und
 
 ## Make it fast
 
-Da wir hier keine größeren Manipulationen am DOM vornehmen und auch sonst nicht viel machen müssen wir hier nichts optimieren. Wenn jemandem etwas auffällt kann er sich ja melden :wink:. Das einzige das mir so spontan einfällt: Man könnte die Animation durch CSS machen. Das Plugin müsste dann feststellen ob der Browser das kann und ggf. die passenden CSS Regeln einfügen. Der Code den wir jetzt haben wäre dann der Fallback falls jemand mit einem alten Browser kommt. Aber das ist sicher auch ein Thema für den nächsten Post.
+Da wir hier keine größeren Manipulationen am DOM vornehmen und auch sonst nicht viel machen müssen wir hier nichts optimieren. Wenn jemandem etwas auffällt kann er sich ja melden :wink:. Das einzige das mir so spontan einfällt: Man könnte die Animation durch CSS machen. Das Plugin müsste dann feststellen ob der Browser das kann und ggf. die passenden CSS Regeln einfügen. Der Code den wir jetzt haben wäre dann der Fallback falls jemand mit einem alten Browser kommt. Aber das ist sicher auch ein Thema für einen späteren Post.
 
-Ich hoffe das war soweit verständlich :grin:. Bis zum nächsten Artikel :punch:
+Ich hoffe das war soweit verständlich :grin:. Bis zum [nächsten Artikel]({% post_url 2014-12-26-jquery-plugins2 %}) :punch:
