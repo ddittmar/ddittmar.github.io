@@ -1,5 +1,4 @@
 /*jslint nomen: true, vars: true */
-/*global _ */
 /*global ga */
 /*global jQuery */
 
@@ -50,7 +49,7 @@ var App = (function ($) {
             jsoncallback
         );
         if (params) {
-            _.each(params, function (value, key) {
+            $.each(params, function (key, value) {
                 url += '&' + key + '=' + value;
             });
         }
@@ -86,9 +85,9 @@ var App = (function ($) {
     function drawPictures(pictures) {
         var chunks = chunk(pictures, 6);
         var frag = document.createDocumentFragment();
-        _.each(chunks, function (chunk) {
+        $.each(chunks, function (_, chunk) {
             var $row = $('<div>').addClass('row');
-            _.each(chunk, function (pic, idx) {
+            $.each(chunk, function (_, pic) {
                 var url_thumb = buildFlickrPicUrl(pic, 'q');
                 var url_image = buildFlickrPicUrl(pic, 'b');
                 var $a = $('<a>')
@@ -166,7 +165,7 @@ var App = (function ($) {
     function drawPhotosets(data) {
         checkFlickrError(data);
         var frag = document.createDocumentFragment();
-        _.each(data.photosets.photoset, function (photoset) {
+        $.each(data.photosets.photoset, function (_, photoset) {
             var $a = $('<a>')
                 .addClass('loadAlbumGallery')
                 .attr('title', photoset.title._content)
