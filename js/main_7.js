@@ -16,6 +16,7 @@ var App = (function ($) {
     /** stores the load function of the actual gallery */
     var galleryFunction;
 
+    // add a format function to String
     if (!(String.hasOwnProperty('format'))) {
         String.format = function (format) {
             var args = Array.prototype.slice.call(arguments, 1);
@@ -25,6 +26,7 @@ var App = (function ($) {
         };
     }
 
+    // add a rot13 function to String
     if (!(String.hasOwnProperty('rot13'))) {
         String.prototype.rot13 = function () {
             return this.replace(/[a-zA-Z]/g, function (c) {
