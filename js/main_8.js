@@ -153,13 +153,13 @@ var App = (function ($) {
 
     function drawGalleryWithPaging(data) {
         drawGallery(data);
-        drawPaging(data.photos.page, data.photos.pages);
+        drawPaging(parseInt(data.photos.page, 10), parseInt(data.photos.pages, 10));
     }
 
     function drawAlbumWithPaging(data) {
         checkFlickrError(data);
         drawPictures(data.photoset.photo);
-        drawPaging(data.photoset.page, data.photoset.pages);
+        drawPaging(parseInt(data.photoset.page, 10), parseInt(data.photoset.pages, 10));
     }
 
     function drawPhotosets(data) {
@@ -203,8 +203,17 @@ var App = (function ($) {
         loadLatestUploadsGallery(1);
     }
     
+    function partial(fn) {
+        var slice = Array.prototype.slice;
+        var boundArgs = slice.call(arguments, 1);
+        return function () {
+            var fnArgs = boundArgs.concat(slice.call(arguments));
+            return fn.apply(this, fnArgs);
+        };
+    }
+    
     function loadAlbumGallery(photoset_id, page) {
-        galleryFunction = _.partial(loadAlbumGallery, photoset_id);
+        galleryFunction = partial(loadAlbumGallery, photoset_id);
         callFlickr('flickr.photosets.getPhotos', 'drawAlbumWithPaging', {
             photoset_id: photoset_id,
             page: page,
