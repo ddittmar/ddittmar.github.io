@@ -280,8 +280,8 @@ Hier ein paar Beispiele, die unten auf die Socia-Media-Buttons wirken:
 
 <a href="javascript:;" onclick="$('.btn-social').blink2('stop');">$('.btn-social').blink2('stop');</a>
 
-<a href="javascript:;" onclick="$('.btn-twitter').blink2({durationIn:100,durationOut:100});">$('.btn-twitter').blink2( {durationIn:100,durationOut:100});</a>
+<a href="javascript:;" onclick="$('.btn-twitter').blink2({durationIn:100,durationOut:100});">$('.btn-twitter').blink2( {durationIn:100,durationOut:100} );</a>
 
-<a href="javascript:;" onclick="$('.btn-twitter').blink2({durationIn:400,durationOut:400});">$('.btn-twitter').blink2( {durationIn:400,durationOut:400});</a>
+<a href="javascript:;" onclick="$('.btn-twitter').blink2({durationIn:400,durationOut:400});">$('.btn-twitter').blink2( {durationIn:400,durationOut:400} );</a>
 
 Alles andere könnt ihr ja auf der Konsole des Browsers ausprobieren. Das fertige Plugin findet ihr [hier](/js/blog/jquery.blink2.js).
