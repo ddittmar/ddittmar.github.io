@@ -276,12 +276,12 @@ Man muss nur daran denken das man die Einstellungen ja nicht bei jedem Aufruf mi
 
 Hier ein paar Beispiele, die unten auf die Socia-Media-Buttons wirken:
 
-<a class="btn btn-default" href="javascript:$('.btn-social').blink2();" role="button">`$('.btn-social').blink2();`</a>
+<a href="javascript:;" onclick="$('.btn-social').blink2();">$('.btn-social').blink2();</a>
 
-<a class="btn btn-default" href="javascript:$('.btn-social').blink2('stop');" role="button">`$('.btn-social').blink2('stop');`</a>
+<a href="javascript:;" onclick="$('.btn-social').blink2('stop');">$('.btn-social').blink2('stop');</a>
 
-<a class="btn btn-default" href="javascript:$('.btn-twitter').blink2({durationIn:100,durationOut:100});" role="button">`$('.btn-twitter').blink2({durationIn:100,durationOut:100});`</a>
+<a href="javascript:;" onclick="$('.btn-twitter').blink2({durationIn:100,durationOut:100});">$('.btn-twitter').blink2( {durationIn:100,durationOut:100});</a>
 
-<a class="btn btn-default" href="javascript:$('.btn-twitter').blink2({durationIn:400,durationOut:400});" role="button">`$('.btn-twitter').blink2({durationIn:400,durationOut:400});`</a>
+<a href="javascript:;" onclick="$('.btn-twitter').blink2({durationIn:400,durationOut:400});">$('.btn-twitter').blink2( {durationIn:400,durationOut:400});</a>
 
 Alles andere könnt ihr ja auf der Konsole des Browsers ausprobieren. Das fertige Plugin findet ihr [hier](/js/blog/jquery.blink2.js).
