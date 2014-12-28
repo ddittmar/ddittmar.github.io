@@ -4,7 +4,7 @@ title:  "CSS3 Animation"
 date:   2014-12-28
 categories: css
 tags: css3 css animation
-og_img: /images/blog/HTML5_Badge_256.png
+og_img: http://static-ddittmar.appspot.com/images/blog/HTML5_Badge_256.png
 og_img-alt: HTML5 Powered
 og_img-width: 256
 og_img-height: 256
@@ -84,7 +84,7 @@ Ihr seht schon das es eigentlich viel zu viele Regeln gibt. Für jeden Browser d
 
 Auf dem Element wird das blinken dann einfach aktiviert indem es die Klasse `blinking` erhält. Hier ein kleines Beispiel zu testen:
 
-<img id="html5" class="" src="/images/blog/HTML5_Badge_256.png" alt="HTML5 Powered" width="128" height="128" /> <a class="btn btn-default" role="button" href="javascript:;" onclick="$('#html5').toggleClass('blinking');">start/stop</a>
+<img id="html5" class="" src="//static-ddittmar.appspot.com/images/blog/HTML5_Badge_256.png" alt="HTML5 Powered" width="128" height="128" /> <a class="btn btn-default" role="button" href="javascript:;" onclick="$('#html5').toggleClass('blinking');">start/stop</a>
 
 Wenn ihr mehr über CSS Animation wissen wollt empfehle ich folgende Lektüre:
 
