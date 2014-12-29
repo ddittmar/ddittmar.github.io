@@ -10,7 +10,7 @@ og_img-width: 400
 og_img-height: 102
 show_head_img: true
 onDocumentReady: > ###
-    $.getScript('/js/blog/jquery.blink2.js');
+    $.cachedScript('//static-ddittmar.appspot.com/js/blog/jquery.blink2.js');
 ---
 Wie im letzten [Post]({% post_url 2014-12-23-jquery-plugins %}) versprochen gucken wir uns jetzt an wie wir es hin bekommen das Plugin mit Methoden auszustatten. Folgendes wollen wir erreichen:
 

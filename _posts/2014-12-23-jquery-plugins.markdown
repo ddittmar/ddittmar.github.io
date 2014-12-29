@@ -10,7 +10,7 @@ og_img-width: 400
 og_img-height: 102
 show_head_img: true
 onDocumentReady: > ###
-    $.getScript('/js/blog/jquery.blink.js', function() {
+    $.cachedScript('//static-ddittmar.appspot.com/js/blog/jquery.blink.js').done(function() {
         $('#blink1').blink();
         $('#blink2').blink({durationOut: 800, durationIn: 100});
     });

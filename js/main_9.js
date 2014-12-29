@@ -2,19 +2,10 @@
 /*global ga */
 /*global jQuery */
 
-var App = (function ($) {
+// JavaScript Erweiterungen
+(function () {
     "use strict";
-
-    var GOOGL_API_KEY = 'AIzaSyCnShRHKnpRuViY9tfYPHEzeGxycwN__8Y';
-    var GOOGL_URL     = 'https://www.googleapis.com/urlshortener/v1/url';
-
-    var USER_ID       = '36825657@N03';
-    var API_KEY       = '5829e1bcf08076b3ad92b34958fe8c3b';
-    var BASE_URL      = 'https://api.flickr.com/services/rest/';
-
-    /** stores the load function of the actual gallery */
-    var galleryFunction;
-
+    
     // add a format function to String
     if (!(String.hasOwnProperty('format'))) {
         String.format = function (format) {
@@ -33,6 +24,47 @@ var App = (function ($) {
             });
         };
     }
+    
+}());
+
+// jQuery Erweiterungen
+(function ($) {
+    "use strict";
+    
+    jQuery.cachedScript = function (url, options) {
+ 
+        // Allow user to set any option except for dataType, cache, and url
+        options = $.extend(options || {}, {
+            dataType: "script",
+            cache: true,
+            url: url
+        });
+
+        // Use $.ajax() since it is more flexible than $.getScript
+        // Return the jqXHR object so we can chain callbacks
+        return jQuery.ajax(options);
+    };
+    /* Usage:
+        $.cachedScript("ajax/test.js").done(function (script, textStatus) {
+            console.log(textStatus);
+        });
+    */
+    
+}(jQuery));
+
+// the Application
+var App = (function ($) {
+    "use strict";
+
+    var GOOGL_API_KEY = 'AIzaSyCnShRHKnpRuViY9tfYPHEzeGxycwN__8Y';
+    var GOOGL_URL     = 'https://www.googleapis.com/urlshortener/v1/url';
+
+    var USER_ID       = '36825657@N03';
+    var API_KEY       = '5829e1bcf08076b3ad92b34958fe8c3b';
+    var BASE_URL      = 'https://api.flickr.com/services/rest/';
+
+    /** stores the load function of the actual gallery */
+    var galleryFunction;
 
     function FlickrApiException(code, message) {
         this.code = code;
