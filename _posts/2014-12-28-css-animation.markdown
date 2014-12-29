@@ -80,7 +80,7 @@ Wenn euer Browser Animation unterstützt kann man mit diesen CSS ein Element zum
 }
 {% endhighlight %}
 
-Ihr seht schon das es eigentlich viel zu viele Regeln gibt. Für jeden Browser da draußen seine eigene Erweiterung. Wenn man noch mehr Animationen braucht wird das schnell unübersichtlich. Ihr könnt auch die Unterstützung bei [Can I Use...](http://caniuse.com/#feat=css-animation) überprüfen.
+Ihr seht schon das es eigentlich viel zu viele Regeln gibt. Für jeden Browser da draußen seine eigene Erweiterung. Wenn man noch mehr Animationen braucht wird das schnell unübersichtlich. Ihr könnt die Unterstützung der Browser bei [Can I Use...](http://caniuse.com/#feat=css-animation) überprüfen.
 
 Auf dem Element wird das blinken dann einfach aktiviert indem es die Klasse `blinking` erhält. Hier ein kleines Beispiel zu testen:
 
