@@ -10,7 +10,7 @@ og_img-width: 256
 og_img-height: 256
 show_head_img: false
 onDocumentReady: > ###
-    $.cachedScript('//static-ddittmar.appspot.com/js/blog/jquery.cssAnimation.js').done(
+    $.cachedScript('//static-ddittmar.appspot.com/js/blog/jquery.cssAnimation.min.js').done(
         function() {
             $('#noAnimation').cssAnimation();
             if (!($('#noAnimation').data('animation').animation)) {
