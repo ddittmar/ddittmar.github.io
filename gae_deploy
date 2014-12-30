@@ -1,5 +1,6 @@
 #!/bin/bash
 echo 'jekyll build'
+./compress
 jekyll build -d _static-ddittmar.appspot.com/static/
 echo 'GAE update'
 appcfg.py update _static-ddittmar.appspot.com/

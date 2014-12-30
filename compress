@@ -1,0 +1,6 @@
+#!/bin/bash
+find js -iregex '.*[^\.min]\.js' | while read file; do
+    minfile=`echo "$file" | sed -r 's/^(.*)\.js/\1\.min\.js/g'`
+    echo "$file -> $minfile"
+    java -jar compiler.jar --js $file > $minfile
+done
