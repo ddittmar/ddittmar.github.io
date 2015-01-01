@@ -6,10 +6,12 @@
 (function () {
     "use strict";
     
+    var slice = Array.prototype.slice;
+    
     // add a format function to String
     if (!(String.hasOwnProperty('format'))) {
         String.format = function (format) {
-            var args = Array.prototype.slice.call(arguments, 1);
+            var args = slice.call(arguments, 1);
             return format.replace(/\{(\d+)\}/g, function (match, number) {
                 return typeof args[number] !== 'undefined' ? args[number] : match;
             });
@@ -25,9 +27,21 @@
         };
     }
     
+    // add a curry function to Function
+    if (!(Function.hasOwnProperty('curry'))) {
+        Function.prototype.curry = function () {
+            var fn = this;
+            var boundArgs = slice.call(arguments);
+            return function () {
+                var fnArgs = boundArgs.concat(slice.call(arguments));
+                return fn.apply(this, fnArgs);
+            };
+        };
+    }
+    
 }());
 
-// jQuery Erweiterungen
+// jQuery Extensions
 (function ($) {
     "use strict";
     
@@ -85,7 +99,7 @@ var App = (function ($) {
                 url += '&' + key + '=' + value;
             });
         }
-        $.getScript(url);
+        $.cachedScript(url);
     }
 
     function checkFlickrError(data) {
@@ -245,7 +259,7 @@ var App = (function ($) {
     }
     
     function loadAlbumGallery(photoset_id, page) {
-        galleryFunction = partial(loadAlbumGallery, photoset_id);
+        galleryFunction = loadAlbumGallery.curry(photoset_id);
         callFlickr('flickr.photosets.getPhotos', 'drawAlbumWithPaging', {
             photoset_id: photoset_id,
             page: page,
