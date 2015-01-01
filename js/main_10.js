@@ -317,7 +317,7 @@ var App = (function ($) {
         e.preventDefault();
         var $this = $(this);
         var longUrl = $this.data('url');
-        ga('send', 'event', 'btn-twitter', 'click', longUrl, {
+        ga('send', 'social', 'twitter', 'share', longUrl, {
             'hitCallback' : function () {
                 var gurl = String.format('{0}?key={1}', GOOGL_URL, GOOGL_API_KEY);
                 $.ajax({
@@ -346,7 +346,7 @@ var App = (function ($) {
 
     var clickBtnGooglePlus = function (self) {
         var $this = $(self);
-        ga('send', 'event', 'btn-google-plus', 'click', $this.data('url'));
+        ga('send', 'social', 'google-plus', 'share', $this.data('url'));
         var location = String.format('{0}?url={1}', $this.attr('href'), encodeURIComponent($this.data('url')));
         window.open(location, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');
     };
@@ -355,7 +355,7 @@ var App = (function ($) {
         e.preventDefault();
         var $this = $(this);
         var url = $this.data('href');
-        ga('send', 'event', 'btn-facebook', 'click', url, {
+        ga('send', 'social', 'facebook', 'share', url, {
             'hitCallback' : function () {
                 var href = $this.attr('href');
                 var location = String.format(
