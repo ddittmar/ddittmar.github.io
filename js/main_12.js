@@ -2,42 +2,45 @@
 /*global ga */
 /*global jQuery */
 
-// JavaScript Erweiterungen
+// JavaScript Extensions
 (function () {
     "use strict";
     
     var slice = Array.prototype.slice;
     
     // add a format function to String
-    if (!(String.hasOwnProperty('format'))) {
-        String.format = function (format) {
-            var args = slice.call(arguments, 1);
-            return format.replace(/\{(\d+)\}/g, function (match, number) {
-                return typeof args[number] !== 'undefined' ? args[number] : match;
-            });
-        };
-    }
+    String.format = function (format) {
+        var args = slice.call(arguments, 1);
+        return format.replace(/\{(\d+)\}/g, function (match, number) {
+            return typeof args[number] !== 'undefined' ? args[number] : match;
+        });
+    };
 
     // add a rot13 function to String
-    if (!(String.hasOwnProperty('rot13'))) {
-        String.prototype.rot13 = function () {
-            return this.replace(/[a-zA-Z]/g, function (c) {
-                return String.fromCharCode((c <= "Z" ? 90 : 122) >= (c = c.charCodeAt(0) + 13) ? c : c - 26);
-            });
-        };
-    }
+    String.prototype.rot13 = function () {
+        return this.replace(/[a-zA-Z]/g, function (c) {
+            return String.fromCharCode((c <= "Z" ? 90 : 122) >= (c = c.charCodeAt(0) + 13) ? c : c - 26);
+        });
+    };
     
     // add a curry function to Function
-    if (!(Function.hasOwnProperty('curry'))) {
-        Function.prototype.curry = function () {
-            var fn = this;
-            var boundArgs = slice.call(arguments);
-            return function () {
-                var fnArgs = boundArgs.concat(slice.call(arguments));
-                return fn.apply(this, fnArgs);
-            };
+    Function.prototype.curry = function () {
+        var fn = this;
+        var boundArgs = slice.call(arguments);
+        return function () {
+            var fnArgs = boundArgs.concat(slice.call(arguments));
+            return fn.apply(this, fnArgs);
         };
-    }
+    };
+    
+    // add a chunk funtion to Array
+    Array.prototype.chunk = function (len) {
+        var chunks = [], i = 0, n = this.length;
+        while (i < n) {
+            chunks.push(this.slice(i, i += len));
+        }
+        return chunks;
+    };
     
 }());
 
@@ -109,13 +112,7 @@ var App = (function ($) {
         }
     }
 
-    function chunk(arr, len) {
-        var chunks = [], i = 0, n = arr.length;
-        while (i < n) {
-            chunks.push(arr.slice(i, i += len));
-        }
-        return chunks;
-    }
+    
 
     function buildFlickrPicUrl(pic, size) {
         return String.format(
@@ -129,7 +126,7 @@ var App = (function ($) {
     }
 
     function drawPictures(pictures) {
-        var chunks = chunk(pictures, 6);
+        var chunks = pictures.chunk(6);
         var frag = document.createDocumentFragment();
         $.each(chunks, function (_, chunk) {
             var $row = $('<div>').addClass('row');
@@ -247,15 +244,6 @@ var App = (function ($) {
     function onLoadGallery() {
         callFlickr('flickr.photosets.getList', 'drawPhotosets', {});
         loadLatestUploadsGallery(1);
-    }
-    
-    function partial(fn) {
-        var slice = Array.prototype.slice;
-        var boundArgs = slice.call(arguments, 1);
-        return function () {
-            var fnArgs = boundArgs.concat(slice.call(arguments));
-            return fn.apply(this, fnArgs);
-        };
     }
     
     function loadAlbumGallery(photoset_id, page) {
