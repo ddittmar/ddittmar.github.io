@@ -103,13 +103,43 @@ blockquote {
     }
 }
 
-/* XS - eXtra Small */
-@media (max-width: 767px) {
+@media (max-width: 345px) {
     .bg-attachment-fixed {}
 	.background-header3 { background-image: url(//static-ddittmar.appspot.com/images/header3-xs.jpg); }
     .background-header2 { background-image: url(//static-ddittmar.appspot.com/images/header2-xs.jpg); }
     .background-header-blog { background-image: url(//static-ddittmar.appspot.com/images/blog_header-xs.jpg); }
     .background-header-gallery { background-image: url(//static-ddittmar.appspot.com/images/gallery_header-xs.jpg); }
+    .postad1 {
+        display: none;
+    }
+}
+
+@media (min-width: 345px) and (max-width: 380px) {
+    .bg-attachment-fixed {}
+	.background-header3 { background-image: url(//static-ddittmar.appspot.com/images/header3-xs.jpg); }
+    .background-header2 { background-image: url(//static-ddittmar.appspot.com/images/header2-xs.jpg); }
+    .background-header-blog { background-image: url(//static-ddittmar.appspot.com/images/blog_header-xs.jpg); }
+    .background-header-gallery { background-image: url(//static-ddittmar.appspot.com/images/gallery_header-xs.jpg); }
+    .postad1 {
+        display: inline-block;
+        width: 300px;
+        height: 250px;
+    }
+}
+
+/* XS - eXtra Small */
+@media (min-width: 381px) and (max-width: 767px) {
+    .bg-attachment-fixed {}
+	.background-header3 { background-image: url(//static-ddittmar.appspot.com/images/header3-xs.jpg); }
+    .background-header2 { background-image: url(//static-ddittmar.appspot.com/images/header2-xs.jpg); }
+    .background-header-blog { background-image: url(//static-ddittmar.appspot.com/images/blog_header-xs.jpg); }
+    .background-header-gallery { background-image: url(//static-ddittmar.appspot.com/images/gallery_header-xs.jpg); }
+    .postad1 {
+        display: inline-block;
+        width: 320px;
+        height: 50px;
+        margin-bottom: 5px;
+    }
 }
 
 /* SM - SMall*/
@@ -119,6 +149,14 @@ blockquote {
     .background-header2 { background-image: url(//static-ddittmar.appspot.com/images/header2-sm.jpg); }
     .background-header-blog { background-image: url(//static-ddittmar.appspot.com/images/blog_header-sm.jpg); }
     .background-header-gallery { background-image: url(//static-ddittmar.appspot.com/images/gallery_header-sm.jpg); }
+    .postad1 {
+        display: inline-block;
+        float: right;
+        width: 300px;
+        height: 250px;
+        margin-left: 5px;
+        margin-bottom: 5px;
+    }
 }
 
 /* MD - MeDium */
@@ -128,6 +166,14 @@ blockquote {
     .background-header2 { background-image: url(//static-ddittmar.appspot.com/images/header2-md.jpg); }
     .background-header-blog { background-image: url(//static-ddittmar.appspot.com/images/blog_header-md.jpg); }
     .background-header-gallery { background-image: url(//static-ddittmar.appspot.com/images/gallery_header-md.jpg); }
+    .postad1 {
+        display: inline-block;
+        float: right;
+        width: 336px;
+        height: 280px;
+        margin-left: 15px;
+        margin-bottom: 5px;
+    }
 }
 
 /* LG - LarGe */
@@ -137,6 +183,14 @@ blockquote {
     .background-header2 { background-image: url(//static-ddittmar.appspot.com/images/header2.jpg); }
     .background-header-blog { background-image: url(//static-ddittmar.appspot.com/images/blog_header.jpg); }
     .background-header-gallery { background-image: url(//static-ddittmar.appspot.com/images/gallery_header.jpg); }
+    .postad1 {
+        display: inline-block;
+        float: right;
+        width: 336px;
+        height: 280px;
+        margin-left: 15px;
+        margin-bottom: 5px;
+    }
 }
 
 @import "syntax-highlighting";
