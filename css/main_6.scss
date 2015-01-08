@@ -103,6 +103,11 @@ blockquote {
     }
 }
 
+.col-sm-6.adblock {
+    height: 250px;
+    margin-bottom: 20px;
+}
+
 @media (max-width: 345px) {
     .bg-attachment-fixed {}
 	.background-header3 { background-image: url(//static-ddittmar.appspot.com/images/header3-xs.jpg); }
