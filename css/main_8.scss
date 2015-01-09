@@ -21,6 +21,10 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 10pt;
 }
 
+code, kbd, pre, samp {
+    font-family: 'Ubuntu Mono', Menlo, Monaco, Consolas, "Courier New", monospace
+}
+
 .bg-dark {
     background-color: $dark;
 }
@@ -103,11 +107,6 @@ blockquote {
     }
 }
 
-.col-sm-6.adblock {
-    height: 250px;
-    margin-bottom: 20px;
-}
-
 @media (max-width: 345px) {
     .bg-attachment-fixed {}
 	.background-header3 { background-image: url(//static-ddittmar.appspot.com/images/header3-xs.jpg); }
@@ -115,6 +114,9 @@ blockquote {
     .background-header-blog { background-image: url(//static-ddittmar.appspot.com/images/blog_header-xs.jpg); }
     .background-header-gallery { background-image: url(//static-ddittmar.appspot.com/images/gallery_header-xs.jpg); }
     .postad1 {
+        display: none;
+    }
+    .blog_adb {
         display: none;
     }
 }
@@ -130,6 +132,12 @@ blockquote {
         width: 300px;
         height: 250px;
     }
+    .blog_adb {
+        display: block;
+        width: 300px;
+        height: 250px;
+        margin-bottom: 20px;
+    }
 }
 
 /* XS - eXtra Small */
@@ -144,6 +152,12 @@ blockquote {
         width: 320px;
         height: 50px;
         margin-bottom: 5px;
+    }
+    .blog_adb {
+        display: block;
+        width: 320px;
+        height: 250px;
+        margin-bottom: 20px;
     }
 }
 
@@ -162,6 +176,12 @@ blockquote {
         margin-left: 5px;
         margin-bottom: 5px;
     }
+    .blog_adb {
+        display: block;
+        width: 336px;
+        height: 280px;
+        margin-bottom: 20px;
+    }
 }
 
 /* MD - MeDium */
@@ -179,6 +199,12 @@ blockquote {
         margin-left: 15px;
         margin-bottom: 5px;
     }
+    .blog_adb {
+        display: block;
+        width: 336px;
+        height: 280px;
+        margin-bottom: 20px;
+    }
 }
 
 /* LG - LarGe */
@@ -195,6 +221,12 @@ blockquote {
         height: 280px;
         margin-left: 15px;
         margin-bottom: 5px;
+    }
+    .blog_adb {
+        display: block;
+        width: 336px;
+        height: 280px;
+        margin-bottom: 20px;
     }
 }
 
