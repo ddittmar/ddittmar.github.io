@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "ubuntu 14.04: Neuste Stellarium Version installieren und den Komenten Lovejoy sichten"
+title:  "ubuntu 14.04: Neuste Stellarium Version installieren und den Kometen Lovejoy sichten"
 date:   2015-01-10
 categories: linux ubuntu
 tags: 
