@@ -27,6 +27,11 @@ Dannach kann man dann Stellarium einfach installieren:
 sudo apt-get install stellarium
 {% endhighlight %}
 
+Oder falls ihr die Version aus den Repositories schon installiert habt, könnt ihr jetzt ein upgrade machen
+{% highlight bash %}
+sudo apt-get upgrade
+{% endhighlight %}
+
 ## Lovejoy in Stellarium sichten
 
 Nachdem wir jetzt eine aktuelles Stellarium haben bringen wir noch den Kometen in die Datenbank des Programms.
