@@ -63,4 +63,4 @@ Wenn ihr erfolgreich wart könnt ihr jetzt im Suchdialog (F3) nach "Lovejoy" suc
 
 Und jetzt raus Sterne gucken! Wenn ihr den Kometen diese Tage nicht seht kommt er erst in etwa 8000 Jahren wieder vorbei. :grin:
 
-Die letzten Tage war es leider immer Bewölkt und wir haben im Moment auch noch einen sehr hellen Mond. Vielleicht kann man den Kometen die nächsten Tage besser sehen. Am 20. Januar ist der Mond dann auch weg.
+Die letzten Tage war es leider immer Bewölkt und wir haben im Moment auch noch einen sehr hellen Mond. Vielleicht kann man den Kometen die nächsten Tage besser sehen. Am 20. Januar ist dann auch Neumond was die Beobachtungsbedingungen verbessern sollte.
