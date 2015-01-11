@@ -8,7 +8,7 @@ tags:
 - lovejoy
 - C/2014 Q2
 ---
-Diese Tage fliegt der Komet C/2014 Q2 durch unser Sonnensystem. Der Komet wird nach seinem Entdecker Terry Lovejoy auch "Lovejoy" genannt und ist im Moment mit bloßem Auge sichtbar. Ich fand es etwas schwierig die Position des Komenten im Himmel zu bestimmen. Im Internet lässt sich nicht so ohne weiteres was finden. Da ist mir die excellente Software [Stellarium](http://www.stellarium.org/) eingefallen.
+Diese Tage fliegt der Komet C/2014 Q2 durch unser Sonnensystem. Der Komet wird nach seinem Entdecker Terry Lovejoy auch "Lovejoy" genannt und ist im Moment mit bloßem Auge sichtbar. Ich fand es etwas schwierig die Position des Kometen im Himmel zu bestimmen. Im Internet lässt sich nicht so ohne weiteres was finden. Da ist mir die excellente Software [Stellarium](http://www.stellarium.org/) eingefallen.
 
 Stellarium stellt den Sternenhimmel so dar wie wir ihn von einem beliebigen Ort auf der Erde sehen. Es werden neben den Sternen und unseren Planeten (und natürlich dem Mond) auch Satelliten, Galaxien und alles mögliche andere dargestellt. Stellarium ist auch für Windows und Mac verfügbar.
 
@@ -50,7 +50,7 @@ Nachdem ihr euren Sternhimmel sehen könnt installieren wir den Kometen:
 1. im dem neunen Dialog den Tab "Sonnensystem" wählen
 1. Button "Bahnelemente im MPC-Format importieren" klicken
 1. im neuen Dialog den Tab "Listen" wählen
-1. den Typ auf "Komenten" stellen
+1. den Typ auf "Kometen" stellen
 1. "Quelle auswählen" auf "Objektliste aus dem Internet herunterladen"
 1. die Quelle auf "MPC's list of observable comets" stellen
 1. den Button "Bahnelemente importieren" klicken
