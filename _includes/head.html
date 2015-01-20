@@ -13,7 +13,11 @@
     <meta name="twitter:site" content="@dittma_d" />
     <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
     <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html }}{% elsif page.description %}{{ page.description | strip_html }}{% else %}{{ site.description }}{% endif %}" />
-    <meta name="twitter:image" content="{% if page.og_img %}{{ page.og_img }}{% elsif site.og_img %}{{ site.og_img }}{% endif %}" />
+    {% if page.og_img %}
+    <meta name="twitter:image" content="{{ page.og_img }}{{ site.og_img }}" />
+    {% elsif site.og_img %}
+    <meta name="twitter:image" content="{{ site.og_img }}" />
+    {% endif %}
 
     <link rel="alternate" hreflang="x-default" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="alternate" hreflang="de" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
