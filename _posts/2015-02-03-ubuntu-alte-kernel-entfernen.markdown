@@ -2,7 +2,7 @@
 layout: post
 title:  "ubuntu: Wie man alte Kernel entfernt"
 date:   2015-02-03
-og_img: /images/blog/ubuntu-logo32.png
+og_img: http://static-ddittmar.appspot.com/images/blog/ubuntu-logo32.png
 og_img-alt: Ubuntu Logo
 og_img-width: 200
 og_img-height: 200
