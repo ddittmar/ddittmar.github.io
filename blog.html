@@ -25,14 +25,7 @@ permalink: /blog/
         {% for post in site.posts %}
         {% assign mod = forloop.index0 | modulo:2 %}
         {% if mod == 0 %}<div class="row">{% endif %}
-        {% if forloop.index0 == 3 %}
-        <div class="col-sm-6">
-            <ins class="adsbygoogle blog_adb"
-                 data-ad-client="ca-pub-9873786474421467"
-                 data-ad-slot="6396295431"></ins>
-            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-        </div>
-        {% else %}{% include post-box.html post=post %}{% endif %}
+        {% include post-box.html post=post %}
         {% if mod != 0 %}</div>{% endif %}
         {% endfor %}
     </div>
