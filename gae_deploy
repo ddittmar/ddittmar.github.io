@@ -3,4 +3,4 @@ echo 'jekyll build'
 ./compress
 jekyll build -d _static-ddittmar.appspot.com/static/
 echo 'GAE update'
-appcfg.py update _static-ddittmar.appspot.com/
+appcfg.py --oauth2 update _static-ddittmar.appspot.com/
