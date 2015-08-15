@@ -5,9 +5,9 @@
 // JavaScript Extensions
 (function () {
     "use strict";
-    
+
     var slice = Array.prototype.slice;
-    
+
     // add a format function to String
     String.format = function (format) {
         var args = slice.call(arguments, 1);
@@ -22,7 +22,7 @@
             return String.fromCharCode((c <= "Z" ? 90 : 122) >= (c = c.charCodeAt(0) + 13) ? c : c - 26);
         });
     };
-    
+
     // add a curry function to Function
     Function.prototype.curry = function () {
         var fn = this;
@@ -32,7 +32,7 @@
             return fn.apply(this, fnArgs);
         };
     };
-    
+
     // add a chunk funtion to Array
     Array.prototype.chunk = function (len) {
         var chunks = [], i = 0, n = this.length;
@@ -41,15 +41,15 @@
         }
         return chunks;
     };
-    
+
 }());
 
 // jQuery Extensions
 (function ($) {
     "use strict";
-    
+
     jQuery.cachedScript = function (url, options) {
- 
+
         // Allow user to set any option except for dataType, cache, and url
         options = $.extend(options || {}, {
             dataType: "script",
@@ -66,7 +66,7 @@
             console.log(textStatus);
         });
     */
-    
+
 }(jQuery));
 
 // the Application
@@ -111,8 +111,6 @@ var App = (function ($) {
             throw new FlickrApiException(data.code, data.message);
         }
     }
-
-    
 
     function buildFlickrPicUrl(pic, size) {
         return String.format(
@@ -245,7 +243,7 @@ var App = (function ($) {
         callFlickr('flickr.photosets.getList', 'drawPhotosets', {});
         loadLatestUploadsGallery(1);
     }
-    
+
     function loadAlbumGallery(photoset_id, page) {
         galleryFunction = loadAlbumGallery.curry(photoset_id);
         callFlickr('flickr.photosets.getPhotos', 'drawAlbumWithPaging', {
@@ -372,7 +370,7 @@ var App = (function ($) {
             }
         });
     });
-    
+
     return {
         loadLandingPageGallery: loadLandingPageGallery,
         drawGallery: drawGallery,
@@ -382,5 +380,43 @@ var App = (function ($) {
         drawAlbumWithPaging: drawAlbumWithPaging,
         clickBtnGooglePlus: clickBtnGooglePlus
     };
+
+}(jQuery));
+
+// Einholen der Zustimmung für Cookies
+(function ($) {
+
+    var cookie_name = 'cookie-hint-shown'
+
+    function cookieExists() {
+        return (document.cookie.indexOf(cookie_name + '=true') > -1);
+    }
+
+    function setCookie() {
+        document.cookie = cookie_name + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/'
+    }
+
+    $(document).ready(function() {
+        if (!cookieExists()) {
+            var $modalDlg = $('#cookie_choice');
+            $('#btn-cookie_choice-details').on('click', function(e) {
+                e.preventDefault();
+                $modalDlg.modal('hide');
+                setCookie();
+                window.location.href = '/datenschutz/';
+            });
+            $('#btn-cookie_choice-ok').on('click', function(e) {
+                e.preventDefault();
+                $modalDlg.modal('hide');
+                setCookie();
+            });
+            setTimeout(function() {
+                $modalDlg.modal({
+                    backdrop: 'static',
+                    keyboard: false
+                });
+            }, 1000);
+        }
+    });
 
 }(jQuery));

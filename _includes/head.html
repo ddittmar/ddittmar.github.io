@@ -8,7 +8,7 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="{% if page.og_img %}{{ page.og_img }}{% elsif site.og_img %}{{ site.og_img }}{% else %}http://static-ddittmar.appspot.com/images/personal.png{% endif %}">
     <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html }}{% elsif page.description %}{{ page.description | strip_html }}{% else %}{{ site.description }}{% endif %}">
-    
+
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@dittma_d" />
     <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
@@ -43,7 +43,7 @@
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html }}{% elsif page.description %}{{ page.description | strip_html }}{% else %}{{ site.description }}{% endif %}">
 
-    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="//static-ddittmar.appspot.com/css/main_8.css">
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
@@ -68,7 +68,7 @@
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-        ga('create', 'UA-54117328-2', 'auto');
+        ga('create', gaProperty, 'auto');
         ga('set', 'anonymizeIp', true);
         ga('set', 'forceSSL', true);
         ga('require', 'displayfeatures');
@@ -85,7 +85,7 @@
         {% endfor %}
         {% endif %}
     </noscript>
-    
+
     <!--[if lt IE 9]>
         <script>alert('Dein Browser ist zu alt! Es ist sehr wahrscheinlich das du die Seite nicht richitg siehst.')</script>
     <![endif]-->
