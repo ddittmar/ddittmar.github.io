@@ -4,7 +4,7 @@ title:  "Linux Terminal Befehle"
 date:   2015-09-05
 categories: linux
 tags: shell
-og_img: /images/blog/Gnome-Utilities-Terminal-64.png
+og_img: http://static-ddittmar.appspot.com/images/blog/Gnome-Utilities-Terminal-64.png
 og_img-alt: "Terminal"
 og_img-width: 64
 og_img-height: 64
