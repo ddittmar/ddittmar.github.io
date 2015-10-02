@@ -5,7 +5,7 @@ date:   2015-10-03
 categories: development general
 tags: programming development
 ---
-Ich erlebe immer wieder wie Entwickler bei der Arbeit behindert werden. Und das ohne wirklichen Grund. Entwickler sind relativ teure Mitarbeiter und Software-Entwicklung dauert eben auch seine Zeit. An alle Entscheider da draußen: "*Behindert nicht eure Entwickler*" und verschwendet keine Resourcen (Geld). Deshalb hier eine kleine Zusammenstellung der größten Fehler, die mir immer wieder begegnen (keine bestimmte Reihenfolge).
+Ich erlebe immer wieder wie Entwickler bei der Arbeit behindert werden. Und das obwohl man die meisten Ursachen eigentlich leicht abstellen könnte. Entwickler sind relativ teure Mitarbeiter und Software-Entwicklung dauert eben auch seine Zeit. An alle Entscheider da draußen: "*Behindert nicht eure Entwickler*" und verschwendet keine Resourcen (Geld). Deshalb hier eine kleine Zusammenstellung der größten Fehler, die mir immer wieder begegnen (keine bestimmte Reihenfolge).
 
 ## Rechner zu schwach
 
@@ -13,7 +13,7 @@ Sehr beliebtes Problem gerade in größeren Organisationen. Meistens gibt es zu 
 
 > "solche Rechner haben hier alle Mitarbeiter..."
 
-Nur was übersehen wird ist das Entwickler auch nicht nur Email, Excel und Word starten. Entwickler starten normalerweise auf ihren lokalen Maschienen die gesammte Anwendung (meist incl. einer Datenbank), die normalerweise auf einem Server läuft. Dann natürlich auch im Debug-Modus, was dann noch mehr Speicher braucht. Dazu kommt natürlich die IDE und alle Tools die man sonst noch so braucht (Datenbank-Werkzeuge und so'n Zeug). Das braucht alles ungemein viel Speicher und CPU-Leistung. Da kommt man nicht mit den Rechnern aus die normalerweise alle Mitarbeiter auf dem Tisch haben. Ich habe auch mal die Begründung gehört:
+Nur was übersehen wird ist das Entwickler auch nicht nur Email, Excel und Word starten. Entwickler starten normalerweise auf ihren lokalen Maschienen die gesammte Anwendung (meist incl. einer Datenbank), die normalerweise auf einem Server läuft. Dann wird die Anwendung meist im Debug-Modus gestartet, was dann noch mehr Resourcen braucht. Dazu kommt natürlich die IDE und alle Tools die man sonst noch so braucht (Datenbank-Werkzeuge und so'n Zeug). Das braucht alles ungemein viel Speicher und CPU-Leistung. Da kommt man nicht mit den Rechnern aus die "alle Mitarbeiter" auf dem Tisch haben. Ich habe auch mal die Begründung gehört:
 
 > "Das machen wir damit die Entwickler besser die Performance des Systems beurteilen können."
 
@@ -25,11 +25,11 @@ Es ist also dringend angeraten die Rechner der Entwickler möglichst gut auszust
 
 Auch ein beliebtes Problem gerade bei Banken und Versicherungen. Warum normale Angestellte nicht ungehinderten Zugang zum Internet haben verstehe ich ja meistens. Normalerweise (gerade bei Banken und Versicherungen) ist es ja so das im Unternehmen recht sensible Daten hantiert werden und man sich deshalb keine Vieren und Würmer und ähnliches einfangen will. Außerdem sollen die Mitarbeiter daran gehindert werden ihre Zeit zu verschwenden (Facebook, YouTube, Twitter, Google+ etc.). Ich hab es schon erlebt das vor lauter gesperre und gefilter kein Zugriff auf Bing möglich war (wtf?).
 
-Es ist eben so das Entwickler ungedingt ungehinderten Zugang brauchen. Als Web-Entwickler kann ich keine YouTube-Video in die Seite einbetten wenn ich keinen Zugriff auf YouTube habe. Das gleiche gilt natürlich auch für Facebook-Like-Buttons und anderens. Außerdem suft man als Entwickler meistens Seiten von denen die meisten Admins noch nie was gehört haben (und die dann gesperrt sind). Zusätzlich werden meistens Protokolle (bzw. Ports) wie SSH und FTP gesperrt. Auch Dinge die Entwickler meistens zur Arbeit benötigen.
+Es ist eben so das Entwickler ungedingt ungehinderten Zugang brauchen. Als Web-Entwickler kann ich keine YouTube-Video in die Seite einbetten wenn ich keinen Zugriff auf YouTube habe. Das gleiche gilt natürlich auch für Facebook-Like-Buttons und anderens. Außerdem suft man als Entwickler meistens Seiten von denen die meisten Admins noch nie was gehört haben (und die dann gesperrt sind). Zusätzlich werden meistens Protokolle (bzw. Ports) wie SSH und FTP gesperrt. Auch Dinge die Entwickler oft zur Arbeit benötigen.
 
-Mein Bruder ist Admin eines Firmen-Netzwerks und er hat das Problem einfach dadurch gelöst das die Entwickler-Rechner in einem eigenen Subnetz sitzen und in diesem Netz dann ungehinderter Internet-Zugang besteht. Für sensible interne Sachen hat jeder Raum dann einfach einen eigenen Rechner bekommen damit die Entwickler dann dort auf interne Dinge zugreifen können (meistens brauchen Entwickler auf solche Resourcen auch nur sehr selten Zugriff). Klingt mir nach einer guten Lösung. Nach Aussagen von meinem Bruder sind *seine* Entwickler zufrieden damit.
+Mein Bruder ist Admin eines Firmen-Netzwerks und er hat das Problem einfach dadurch gelöst das die Entwickler-Rechner in einem eigenen Subnetz sitzen. In diesem Subnetz besteht dann ungehinderter Internet-Zugang. Für sensible interne Sachen hat jeder Raum dann einfach einen eigenen Rechner bekommen. Mit diesem können die Entwickler dann auf interne Dinge zugreifen. Meistens brauchen Entwickler auf solche Resourcen auch nur sehr selten Zugriff. Klingt mir nach einer guten Lösung. Nach Aussagen von meinem Bruder sind *seine* Entwickler zufrieden damit.
 
-Die meisten Firmen verschwenden zum Filtern einen Proxy. Da kann man sicher leicht die Entwickler einer Benutzer-Gruppe setzten zuweisen die dann uneingeschränkten Zugang hat. Wäre doch auch eine Idee, oder?
+Die meisten Firmen verwenden zum Filtern einen Proxy. Da kann man sicher leicht die Entwickler einer Benutzer-Gruppe  zuordnen, die dann uneingeschränkten Zugang hat. Wäre doch auch eine Idee, oder?
 
 ## Vorgeschriebenes Betriebssystem
 
@@ -39,11 +39,11 @@ Das kann man alles vermeiden wenn man die Entwickler auf der Zielumgebung entwic
 
 ## Keine Admin Rechte
 
-Entwickler benötigen normalerweise Tools die so in der Organisationn nicht vorgesehen sind. Diese Tools kosten zudem nichts, das es sich um OpenSource handelt. Meistens wird den Entwicklern durch Aussagen wie
+Entwickler benötigen normalerweise Tools die so in der Organisationn nicht vorgesehen sind. Keine anderen Mitarbeiter benötigen diese Werkzeuge. Diese Tools kosten zudem nichts, da es sich oft um OpenSource handelt. Leider wird den Entwicklern der Zugang zu sehr nützlichen Tools verwehrt oder erschwert.
 
 > "Hier hat kein Mitarbeiter Admin-Rechte"
 
-der Zugang zu sehr nützlichen Tools verwehrt oder erschwert. Das erzeugt Mehrarbeit und verbraucht Geld und Nerven.
+Das erzeugt Mehrarbeit und verbraucht Geld und Nerven. Meistens ist es schon schwierig Firefox und Chrome auf den Rechner zu bekommen. Aber als Web-Entwickler muss ich sagen das diesse Browser zum debuggen unverzichtbar sind. Außdem sollen die Seiten ja auch in diesen Browsern laufen, richtig?
 
 ## Technisch veraltete Umgebung
 
@@ -67,14 +67,13 @@ Auch werden gerne mal pauschal Programmiersprachen verteufelt:
 
 > "PHP? Das ist unsicher..."
 
-Überhaupt wird mit der Begründung "XXX ist nicht Sicher" alles abgelehnt worauf man keine Lust hat (oder sich mal weiter entwickeln müsste).
+Überhaupt wird mit der Begründung "XXX ist nicht sicher" alles abgelehnt worauf man keine Lust hat (oder sich mal weiter entwickeln müsste).
 
 Das ganze getue verhindert Innovation und Weiterentwicklung der Organisation. Das scheint jetzt kein Problem zu sein (ist es auch erstmal nicht) aber in die Zukunft investieren sieht anders aus. Auf Dauer fährt man mit der Strategie gegen die Wand (siehe CVS im Jahre 2015).
 
 ## Zu guter letzt...
 
-Wie oben bereit erwähnt ist es so das Entwickler relativ teuer sind. Zudem kennt man ja die Probleme wenn man mal versucht einen Entwickler einzustellen. Da kriegt man nicht mal schnell jemanden "zum nächsten ersten". Was ich sagen will ist das man sich als einigermaßen begabter Entwickler sich die Firma aussuchen kann. Es ist also nicht so das nur Geld aus dem Fenster wirft, da die Entwickler nicht ungestört ihrer eigentlichen Tätigkeit nachgehen können (Entwickler entwickeln Software :open_mouth:). Es ist auch so das Entwickler einfach die Firma wechseln können wenn ihnen das *"hier"* nicht gefällt.
+Wie oben bereit erwähnt ist es so das Entwickler relativ teuer sind. Zudem kennt man ja die Probleme wenn man mal versucht einen Entwickler einzustellen. Da kriegt man nicht mal schnell jemanden "zum nächsten ersten". Was ich sagen will ist das man sich als einigermaßen begabter Entwickler sich die Firma aussuchen kann. Es ist also nicht so das nur Geld aus dem Fenster wirft, da die Entwickler nicht ungestört ihrer eigentlichen Tätigkeit nachgehen können. Es ist auch so das Entwickler einfach die Firma wechseln können wenn ihnen das *"hier"* nicht gefällt.
 
 Werfen sie also kein Geld aus dem Fenster und machen sie ihre Entwickler zu glücklichen und prokutiven Mitarbeitern.
-
-*Leider weiß ich das dieser Artikel (fast) ungelesen im Internet verhallen wird. Aber vielleicht ließt es ja doch jemand und zieht die richtigen Schlüsse.*
+*Leider weiß ich das dieser Artikel (fast) ungelesen im Internet verhallen wird. Aber vielleicht ließt es ja doch jemand und verbessert irgendwo die Produktivität seiner Entwickler.*
