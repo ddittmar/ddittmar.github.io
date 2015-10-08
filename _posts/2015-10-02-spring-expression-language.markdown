@@ -4,7 +4,7 @@ title:  "Spring Expression Language"
 date:   2015-10-02
 categories: java spring
 tags: programming java spring spring-el
-og_img: /images/blog/spring-icon.png
+og_img: http://static-ddittmar.appspot.com/images/blog/spring-icon.png
 og_img-alt: "Spring"
 og_img-width: 64
 og_img-height: 64
