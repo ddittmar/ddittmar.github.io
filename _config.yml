@@ -11,7 +11,7 @@ github_username:  ddittmar
 # Build settings
 markdown: kramdown
 permalink: /blog/:categories/:year/:month/:day/:title/
-highlighter: pygments
+highlighter: rouge
 gems:
   - jekyll-sitemap
   - jemoji
